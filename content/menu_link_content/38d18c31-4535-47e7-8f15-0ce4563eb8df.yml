@@ -1,0 +1,43 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 38d18c31-4535-47e7-8f15-0ce4563eb8df
+  bundle: menu_link_content
+  default_langcode: fr
+  depends:
+    4cb39b5c-7990-4b34-a16b-aacf53271904: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Lien de navigation'
+  menu_name:
+    -
+      value: footer-menu-4
+  link:
+    -
+      title: ''
+      options:
+        attributes:
+          class:
+            - ''
+        icon: null
+        icon_display: icon_only
+      target_uuid: 4cb39b5c-7990-4b34-a16b-aacf53271904
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

@@ -1,0 +1,43 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 6353667d-9e1e-407d-a7b0-244d69569028
+  bundle: menu_link_content
+  default_langcode: fr
+  depends:
+    a1b95be6-2ef5-454f-8a2a-cd63da1e52fb: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Menu spécial'
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      title: ''
+      options:
+        attributes:
+          class:
+            - fr-tag--green-archipel
+        icon: null
+        icon_display: after
+      target_uuid: a1b95be6-2ef5-454f-8a2a-cd63da1e52fb
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: -44
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

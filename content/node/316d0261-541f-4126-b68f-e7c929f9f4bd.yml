@@ -1,0 +1,39 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 316d0261-541f-4126-b68f-e7c929f9f4bd
+  bundle: page
+  default_langcode: fr
+  depends:
+    82f28453-89a2-496d-bc54-edf30d2125b1: user
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 82f28453-89a2-496d-bc54-edf30d2125b1
+  title:
+    -
+      value: ' Données personnelles'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /donnees-personnelles
+      langcode: fr
+  body:
+    -
+      value: '<p>[...]</p><h2 id="a-qui-sont-destinees-vos-donnees-">À qui sont destinées vos données ?</h2><p>[...]</p><h2 id="a-quoi-servent-vos-donnees-">À quoi servent vos données ?</h2><p>[...]</p><h2 id="comment-vos-donnees-sont-elles-collectees-">Comment vos données sont-elles collectées ?</h2><p>Vos données peuvent d’abord être collectées sur des formulaires. Chaque formulaire limite la collecte des données personnelles au strict nécessaire (minimisation des données) et indique notamment :</p><ul type="disc"><li data-list-item-id="ef0571b01164232538658f7173c08392f">quels sont les objectifs du recueil de ces données (finalités),</li><li data-list-item-id="e754e6db4309fc4d00fbad0a7bfc93cc5">si ces données sont obligatoires ou facultatives pour la gestion de votre demande,</li><li data-list-item-id="e7781f2adf6009303a5db1dbf30163b65">qui pourra en prendre connaissance,</li><li data-list-item-id="ed5755695b7b84e475af7dd10ae53be31">la façon d’exercer vos droits Informatique et Libertés pour les données collectées.</li></ul><h2 id="pendant-combien-de-temps-vos-donnees-sont-elles-conservees-">Pendant combien de temps vos données sont-elles conservées ?</h2><p>De manière générale, vos données sont conservées pendant 5 ans, sauf :</p><ul type="disc"><li data-list-item-id="e27e864c87bff9158f7b7563118049933">les journaux applicatifs qui sont conservés 1 an,</li><li data-list-item-id="ee0588d4ed043aa842642060813028e25">votre choix en matière de <em>cookies </em>qui est conservé 6 mois,</li><li data-list-item-id="eac22b691ead0e31a8b34f70506149348">les données collectées grâce aux <em>cookies </em>qui sont conservés 25 mois.</li></ul>'
+      format: full_html_dsfr
+      summary: ''

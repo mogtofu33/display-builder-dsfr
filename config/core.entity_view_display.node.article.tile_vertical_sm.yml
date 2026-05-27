@@ -1,0 +1,200 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - core.entity_view_mode.node.tile_vertical_sm
+    - field.field.node.article.body
+    - field.field.node.article.comment
+    - field.field.node.article.field_image
+    - field.field.node.article.field_pictogramme
+    - field.field.node.article.field_tags
+    - image.style.wide
+    - node.type.article
+  module:
+    - comment
+    - display_builder
+    - image
+    - smart_trim
+    - text
+    - ui_icons_field
+    - ui_patterns
+    - ui_patterns_field_formatters
+    - ui_suite_dsfr_components
+    - user
+third_party_settings:
+  display_builder:
+    profile: advanced
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_dsfr_components:tile'
+            variant_id:
+              source_id: select
+              source:
+                value: sm
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              title_tag:
+                source_id: select
+                source:
+                  value: h5
+              link:
+                source_id: entity_link
+                source:
+                  template: canonical
+                  absolute: 0
+              blank:
+                source_id: checkbox
+                source:
+                  value: 0
+              no_arrow:
+                source_id: checkbox
+                source:
+                  value: 0
+              variation:
+                source_id: select
+                source:
+                  value: grey
+              download:
+                source_id: checkbox
+                source:
+                  value: 0
+              display_md:
+                source_id: select
+                source:
+                  value: ''
+              display_lg:
+                source_id: select
+                source:
+                  value: ''
+            slots:
+              title:
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:article:title'
+                      'field:node:article:title':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:article:title'
+                              source:
+                                type: smart_trim
+                                settings:
+                                  trim_length: '40'
+                                  trim_type: chars
+                                  trim_suffix: ...
+                                  trim_options:
+                                    text: text
+                                    trim_zero: 0
+                                    replace_tokens: 0
+                                  wrap_class: trimmed
+                                  more:
+                                    text: More
+                                    aria_label: 'Read more about [node:title]'
+                                    class: more-link
+                                    display_link: 0
+                                    link_trim_only: 0
+                                    target_blank: 0
+                                  wrap_output: 0
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: 437c2f917cdafbba
+              image:
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:article:field_pictogramme'
+                      'field:node:article:field_pictogramme':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:article:field_pictogramme'
+                              source:
+                                type: icon_formatter
+                                settings:
+                                  dsfr_picto:
+                                    size: '350'
+                                    color: blue-cumulus
+                                  icon_settings:
+                                    dsfr_picto:
+                                      size: '350'
+                                      color: blue-cumulus
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                      saved_values:
+                        size: '350'
+                        color: blue-cumulus
+                    node_id: d8c08474572e70c6
+              content:
+                sources: {  }
+              tags_badges:
+                sources: {  }
+            third_party_settings: ''
+            node_id: ''
+        node_id: b1fb08c50e8e3193
+id: node.article.tile_vertical_sm
+targetEntityType: node
+bundle: article
+mode: tile_vertical_sm
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  comment:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: wide
+      image_loading:
+        attribute: eager
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  field_pictogramme:
+    type: icon_formatter
+    label: above
+    settings:
+      icon_settings: {  }
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

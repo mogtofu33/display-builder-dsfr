@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 3a61706e-58a5-4690-813f-c187967b14d8
+  default_langcode: fr
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: accueillir_usagers.jpg
+  uri:
+    -
+      value: 'public://images/accueillir_usagers.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 108448
+  status:
+    -
+      value: true

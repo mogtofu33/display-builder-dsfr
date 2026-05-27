@@ -1,0 +1,65 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: a5dc04ed-efb9-416c-b27f-4d170f7453bb
+  bundle: article
+  default_langcode: fr
+  depends:
+    82f28453-89a2-496d-bc54-edf30d2125b1: user
+    7d63020b-e520-4a1c-a34b-26ec167e7bcf: file
+    9e4d1951-ee35-4369-8304-229852974892: taxonomy_term
+    074ec23d-4fef-4827-8540-67e4f05caf30: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 82f28453-89a2-496d-bc54-edf30d2125b1
+  title:
+    -
+      value: 'Développement de l’accès aux services numériques publics'
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /article/developpement-de-l-acces-aux-services-numeriques-publics
+      langcode: fr
+  body:
+    -
+      value: '<p>L’État renforce les dispositifs d’inclusion numérique pour permettre à tous les usagers d’accéder plus facilement aux services publics en ligne.</p><p>Des espaces d’accompagnement sont déployés dans plusieurs territoires afin d’aider les citoyens dans leurs démarches numériques.</p><hr /><p><b>Lutter contre l’exclusion numérique</b> : Environ 13 millions de Français sont en situation de fragilité numérique. Cette réalité justifie le déploiement massif d’accompagnement et de formation au numérique.</p><p>Les populations fragiles incluent les seniors, les personnes peu instruites, les chômeurs et les personnes handicapées. Des solutions adaptées et respectueuses de la dignité de chacun sont mises en place.</p><hr /><p><b>Formation et accompagnement</b> : Les conseillers numériques proposent une aide gratuite et sans condition. Ils enseignent les compétences essentielles pour naviguer en ligne et accéder aux services administratifs.</p><p>Des formations ciblées sont développées pour chaque groupe de population. Les seniors bénéficient de cours spécialisés adaptés à leurs besoins et à leur rythme d’apprentissage.</p><p><b>Accès aux équipements</b> : Des ordinateurs publics mis à disposition gratuitement permettent à tous d’accéder à internet. Les connexions haut débit sont élargies pour couvrir les zones géographiquement isolées.</p>'
+      format: full_html_dsfr
+      summary: ''
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1779892603
+      last_comment_name: ''
+      last_comment_uid: 2
+      comment_count: 0
+  field_image:
+    -
+      alt: 'Services numériques publics'
+      title: ''
+      width: 1440
+      height: 808
+      entity: 7d63020b-e520-4a1c-a34b-26ec167e7bcf
+  field_pictogramme:
+    -
+      target_id: 'dsfr_picto:internet'
+  field_tags:
+    -
+      entity: 9e4d1951-ee35-4369-8304-229852974892
+    -
+      entity: 074ec23d-4fef-4827-8540-67e4f05caf30

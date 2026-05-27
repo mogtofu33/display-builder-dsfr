@@ -1,0 +1,41 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 3aeafc64-5e79-4ce4-a326-6e6e2b86a6ce
+  bundle: menu_link_content
+  default_langcode: fr
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Lien contour'
+  menu_name:
+    -
+      value: quick-access
+  link:
+    -
+      uri: 'internal:/'
+      title: ''
+      options:
+        attributes:
+          class:
+            - fr-border-plain--orange-terre-battue
+        icon: null
+        icon_display: icon_only
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

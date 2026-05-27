@@ -1,0 +1,10 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.card_vertical
+label: 'Card vertical'
+description: null
+targetEntityType: node
+cache: true

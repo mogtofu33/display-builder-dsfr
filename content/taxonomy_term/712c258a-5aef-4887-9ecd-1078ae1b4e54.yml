@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 712c258a-5aef-4887-9ecd-1078ae1b4e54
+  bundle: tags
+  default_langcode: fr
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Formation
+  weight:
+    -
+      value: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /tags/formation
+      langcode: fr
+  field_color_schema:
+    -
+      value: brown-opera
+  field_icon:
+    -
+      target_id: 'dsfr:book-2-line'

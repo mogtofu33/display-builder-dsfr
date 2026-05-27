@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: cea19643-9d56-42cf-bcf9-af4c49ac8cb7
+  bundle: tags
+  default_langcode: fr
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Territoires
+  weight:
+    -
+      value: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /tags/territoires
+      langcode: fr
+  field_color_schema:
+    -
+      value: green-menthe
+  field_icon:
+    -
+      target_id: 'dsfr:road-map-line'

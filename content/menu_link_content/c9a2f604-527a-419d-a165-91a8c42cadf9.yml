@@ -1,0 +1,47 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: c9a2f604-527a-419d-a165-91a8c42cadf9
+  bundle: menu_link_content
+  default_langcode: fr
+  depends:
+    822fefb9-7432-44fd-8791-dc2cbac75c25: menu_link_content
+    83cb6584-a76f-421c-9237-db1874b9f410: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Lien contenu 2 couleur'
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      title: ''
+      options:
+        attributes:
+          class:
+            - fr-tag--yellow-tournesol
+        icon: null
+        icon_display: icon_only
+      target_uuid: 83cb6584-a76f-421c-9237-db1874b9f410
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: -49
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:822fefb9-7432-44fd-8791-dc2cbac75c25'
+  revision_translation_affected:
+    -
+      value: true

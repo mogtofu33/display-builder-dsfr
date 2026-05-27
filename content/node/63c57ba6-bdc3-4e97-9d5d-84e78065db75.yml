@@ -1,0 +1,65 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 63c57ba6-bdc3-4e97-9d5d-84e78065db75
+  bundle: article
+  default_langcode: fr
+  depends:
+    82f28453-89a2-496d-bc54-edf30d2125b1: user
+    188cf226-e55e-4528-8e15-2d68b5978808: file
+    51440835-a6e8-4fa4-9049-1fef3bdadf70: taxonomy_term
+    475a6a6a-8f8a-491e-b4da-289b34789614: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 82f28453-89a2-496d-bc54-edf30d2125b1
+  title:
+    -
+      value: 'Fréquentation des sites de l’État, statistiques publiques'
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /article/frequentation-des-sites-de-l-etat-statistiques-publiques
+      langcode: fr
+  body:
+    -
+      value: '<p>Toutes les données des sites en .gouv.fr en un coup d’œil</p><p>Visualisez les données d’audience des sites publics et l’ensemble des noms de domaine en .gouv.fr, l’extension réservée aux sites Internet de l’État.</p><hr /><p><b>Transparence des données publiques</b> : La publication régulière de ces statistiques témoigne de l’engagement du gouvernement en faveur de la transparence et de la responsabilité. Les données sont collectées, traitées et mises à disposition de manière impartiale et fiable.</p><p>Les citoyens, les chercheurs et les analystes peuvent accéder librement à ces informations pour comprendre l’audience et l’impact des sites gouvernementaux. Cette transparence renforce la confiance envers les institutions.</p><hr /><p><b>Analyse des tendances</b> : Les données permettent d’identifier les tendances d’utilisation des services en ligne de l’État. Les pics de fréquentation et les variations saisonnières sont clairement visibles et analysables.</p><p>Ces informations aident les administrations à optimiser leurs investissements numériques et à améliorer l’expérience utilisateur. Des comparaisons entre sites favorisent les bonnes pratiques et l’amélioration continue.</p><p><b>Accessibilité des données</b> : Un tableau de bord interactif permet de filtrer et explorer les données selon différents critères : ministère, type de service, domaine d’activité. Les téléchargements en formats ouverts facilitent l’utilisation des données.</p>'
+      format: full_html_dsfr
+      summary: ''
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1779892603
+      last_comment_name: ''
+      last_comment_uid: 2
+      comment_count: 0
+  field_image:
+    -
+      alt: 'DSFR statistiques'
+      title: ''
+      width: 1212
+      height: 578
+      entity: 188cf226-e55e-4528-8e15-2d68b5978808
+  field_pictogramme:
+    -
+      target_id: 'dsfr_picto:compass'
+  field_tags:
+    -
+      entity: 51440835-a6e8-4fa4-9049-1fef3bdadf70
+    -
+      entity: 475a6a6a-8f8a-491e-b4da-289b34789614

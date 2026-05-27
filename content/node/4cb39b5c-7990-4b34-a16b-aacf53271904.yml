@@ -1,0 +1,65 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 4cb39b5c-7990-4b34-a16b-aacf53271904
+  bundle: article
+  default_langcode: fr
+  depends:
+    82f28453-89a2-496d-bc54-edf30d2125b1: user
+    da27a8f1-4c84-416c-89ad-fad43fd3ff3c: file
+    7e9e9f92-9180-408b-8059-ac8f562e9a48: taxonomy_term
+    725613cc-b860-41e5-a4c0-5e02db3d9236: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 82f28453-89a2-496d-bc54-edf30d2125b1
+  title:
+    -
+      value: 'Renforcement de l’accompagnement des collectivités locales'
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /article/renforcement-de-l-accompagnement-des-collectivites-locales
+      langcode: fr
+  body:
+    -
+      value: '<p>Un nouveau programme d’accompagnement est mis en place pour soutenir les collectivités territoriales dans leurs projets de transition écologique et de modernisation des infrastructures publiques. Les dispositifs incluent un appui technique, des formations et des financements dédiés.</p><hr /><p><b>Objectifs du programme</b> : Ce programme ambitieux vise à renforcer la capacité des collectivités locales à mettre en œuvre des projets durables et innovants sur leur territoire. Il fournit un soutien multifacette pour accompagner les élus et les équipes techniques.</p><p>Les ressources mises à disposition incluent des consultants spécialisés, des ateliers de formation réguliers et des lignes de financement adaptées à différents types de projets. Les collectivités peuvent ainsi accélérer leur transformation.</p><hr /><p><b>Domaines d’intervention</b> : Le programme couvre plusieurs domaines clés incluant la transition écologique, l’amélioration des services publics, l’efficacité énergétique et la mobilité durable. Chaque collectivité peut adapter ces domaines à ses priorités locales.</p><p>Des exemples concrets de projets réussis sont partagés régulièrement pour inspirer les nouvelles initiatives. Le réseau de partage d’expérience entre collectivités favorise l’innovation et l’apprentissage mutuel.</p><p><b>Comment participer</b> : Les collectivités intéressées peuvent candidater via un processus simplifié d’appel à manifestation d’intérêt. L’équipe d’accompagnement évalue les projets et propose un suivi personnalisé pour chaque lauréat.</p>'
+      format: full_html_dsfr
+      summary: ''
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1779892603
+      last_comment_name: ''
+      last_comment_uid: 2
+      comment_count: 0
+  field_image:
+    -
+      alt: 'Collectivités locales'
+      title: ''
+      width: 1200
+      height: 800
+      entity: da27a8f1-4c84-416c-89ad-fad43fd3ff3c
+  field_pictogramme:
+    -
+      target_id: 'dsfr_picto:city-hall'
+  field_tags:
+    -
+      entity: 7e9e9f92-9180-408b-8059-ac8f562e9a48
+    -
+      entity: 725613cc-b860-41e5-a4c0-5e02db3d9236

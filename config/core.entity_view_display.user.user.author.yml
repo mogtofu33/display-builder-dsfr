@@ -1,0 +1,147 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.author
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - display_builder
+    - image
+    - ui_patterns
+    - ui_patterns_field_formatters
+    - ui_suite_dsfr_components
+    - user
+third_party_settings:
+  display_builder:
+    profile: advanced
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_dsfr_components:tile'
+            variant_id:
+              source_id: select
+              source:
+                value: sm
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              title_tag:
+                source_id: select
+                source:
+                  value: h4
+              link:
+                source_id: ''
+                source:
+                  value: ''
+              blank:
+                source_id: checkbox
+                source:
+                  value: 0
+              variation:
+                source_id: select
+                source:
+                  value: no-border
+              download:
+                source_id: checkbox
+                source:
+                  value: 0
+            slots:
+              image:
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:user:user:user_picture'
+                      'field:user:user:user_picture':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:user:user:user_picture'
+                              source:
+                                type: image
+                                label: hidden
+                                settings:
+                                  image_link: content
+                                  image_style: thumbnail
+                                  image_loading:
+                                    attribute: lazy
+                                third_party_settings: {  }
+                                weight: 0
+                                region: content
+                    node_id: a15015d73b828704
+                    third_party_settings:
+                      styles:
+                        selected:
+                          img_responsive: 'fr-responsive-img fr-ratio-1x1'
+                        extra: ''
+              title:
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:user:user:name'
+                      'field:user:user:name':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:user:user:name'
+                              source:
+                                type: string
+                                settings:
+                                  link_to_entity: '1'
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: 82baf5f8dfcda77e
+              detail:
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:user:user:roles'
+                      'field:user:user:roles':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:user:user:roles'
+                              source:
+                                type: entity_reference_label
+                                settings:
+                                  link: 0
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: e5c6177383764201
+            third_party_settings: ''
+            node_id: ''
+        node_id: 35b25d1a0314982e
+        third_party_settings:
+          styles:
+            selected:
+              spacing_margin: fr-m-3w
+            extra: ''
+
+id: user.user.author
+targetEntityType: user
+bundle: user
+mode: author
+content:
+  user_picture:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  member_for: true

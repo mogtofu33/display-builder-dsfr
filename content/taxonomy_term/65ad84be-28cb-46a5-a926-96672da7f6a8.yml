@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 65ad84be-28cb-46a5-a926-96672da7f6a8
+  bundle: tags
+  default_langcode: fr
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Système de Design'
+  description:
+    -
+      value: '<p>Le Système de Design de l’État (DSFR) est l’outil destiné à produire les interfaces officielles des sites en .gouv.fr.</p>'
+      format: basic_html_dsfr
+  weight:
+    -
+      value: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /tags/systeme-de-design
+      langcode: fr
+  field_color_schema:
+    -
+      value: brown-opera
+  field_icon:
+    -
+      target_id: 'dsfr:slideshow-line'

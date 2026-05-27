@@ -1,0 +1,43 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 4e1b9cd2-636b-4aa2-aec4-cd3117f81308
+  bundle: menu_link_content
+  default_langcode: fr
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Lien externe'
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      uri: 'https://www.info.gouv.fr'
+      title: ''
+      options:
+        attributes:
+          target: _blank
+          rel: 'noopener external'
+          class:
+            - ''
+        icon: null
+        icon_display: icon_only
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: -45
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

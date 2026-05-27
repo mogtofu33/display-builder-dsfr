@@ -1,0 +1,8 @@
+langcode: en
+status: true
+id: en
+label: English
+direction: ltr
+# Fail with setWeight() error.
+# weight: 0
+locked: false

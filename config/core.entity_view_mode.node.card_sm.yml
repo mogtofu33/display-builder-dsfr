@@ -1,0 +1,10 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.card_sm
+label: 'Card horizontal small'
+description: null
+targetEntityType: node
+cache: true

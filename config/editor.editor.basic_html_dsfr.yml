@@ -1,0 +1,71 @@
+uuid: 3adaed64-b56c-45c4-91b9-1937564f6e1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html_dsfr
+  module:
+    - ckeditor5
+_core:
+  default_config_hash: 03ku1HlpGtzCvp3aEwcj3rG_uD9rMsvmUPCUwgwIMvY
+format: basic_html_dsfr
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - style
+      - UiStylesInline
+      - heading
+      - '|'
+      - bold
+      - italic
+      - '|'
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - icon
+      - blockQuote
+      - '|'
+      - showBlocks
+      - sourceEditing
+  plugins:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_list:
+      properties:
+        reversed: false
+        startIndex: true
+        styles: true
+      multiBlock: true
+    ckeditor5_sourceEditing:
+      allowed_tags: {  }
+    ckeditor5_style:
+      styles:
+        -
+          label: 'Mise en avant'
+          element: '<p class="fr-highlight">'
+    media_media:
+      allow_view_mode_override: true
+    ui_styles_ckeditor5_uiStylesInline:
+      enabled_styles:
+        - typography
+        - alternative-font
+        - text_color
+        - background
+        - display_print
+        - visually_hidden
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: null
+  max_dimensions:
+    width: null
+    height: null

@@ -1,0 +1,68 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: a1b95be6-2ef5-454f-8a2a-cd63da1e52fb
+  bundle: article
+  default_langcode: fr
+  depends:
+    82f28453-89a2-496d-bc54-edf30d2125b1: user
+    6fbca394-107c-4a1c-9fa7-ba4e9f672d87: file
+    475a6a6a-8f8a-491e-b4da-289b34789614: taxonomy_term
+    65ad84be-28cb-46a5-a926-96672da7f6a8: taxonomy_term
+    51440835-a6e8-4fa4-9049-1fef3bdadf70: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 82f28453-89a2-496d-bc54-edf30d2125b1
+  title:
+    -
+      value: 'Bienvenue sur votre site Drupal DSFR'
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /article/bienvenue-sur-votre-site-drupal-dsfr
+      langcode: fr
+  body:
+    -
+      value: '<p>Le Système de Design de l’État (DSFR) est l’outil destiné à produire les interfaces officielles des sites en .gouv.fr. Il regroupe un ensemble de règles et de composants réutilisables, pour fournir à la population des services numériques simples, accessibles et reconnaissables.</p><img data-entity-uuid="0e669cb5-88c8-4613-8229-54b30479b8d2" data-entity-type="file" src="/sites/default/files/inline-images/webapp_0.jpg" height="467" alt="Exemple" data-align="center" width="830" data-caption="&lt;span class=&quot;fr-responsive-img fr-ratio-1x1&quot;&gt;Légende de l&apos;image - Crédit photo&lt;/span&gt;"><p class="fr-highlight"><a href="https://www.drupal.org/project/ui_suite_dsfr">UI Suite DSFR</a> est la solution de référence pour intégrer le Système de Design de l‘État (DSFR) dans Drupal. Recommandée par le Service d‘Information du Gouvernement (SIG), elle permet de construire des sites institutionnels conformes aux standards français en mode low-code.</p><h2>Fonctionnalités Principales</h2><p>Cette suite transforme le back-office de Drupal en un outil de construction visuelle puissant :</p><ul><li data-list-item-id="e041e590c932a0859b0a731ceab8a3d6d"><strong>Construction Low-Code</strong> : Les équipes métier peuvent assembler des pages complètes via le Layout Builder sans écrire de PHP ni de HTML, en utilisant des blocs préconfigurés.</li><li data-list-item-id="e6c099eaaae01debd00e74b7851a20be0"><strong>Bibliothèque de Composants</strong> : Elle expose nativement 44 composants (cartes, boutons, fils d‘Ariane, citations) et 17 fondamentaux (typographie, espacements, icônes) directement dans l‘interface d‘administration.</li><li data-list-item-id="ed3e8e5045c5e26403e984eb42d6e066c"><strong>Gestion des Thèmes</strong> : Prise en charge native des modes clair, sombre, deuil et de la synchronisation avec les préférences système.</li><li data-list-item-id="e7d63b66a3f2e44ec1f7d5a9cc5313963"><strong>Compatibilité</strong> : La branche principale (1.x) supporte Drupal 10.3+ et 11, ainsi que la version 1.14 du DSFR.</li></ul><h2>Avantages pour les Utilisateurs</h2><ul><li data-list-item-id="e0a7618f3b1941a371d24f098f696e7c4"><strong>Conformité</strong> : Garantit que les sites respectent les normes d’accessibilité et de design du gouvernement français.</li><li data-list-item-id="e123318d4425bff79d60dcf578c44266a"><strong>Efficacité</strong> : Réduit le temps de développement en permettant aux équipes métier de créer des pages sans intervention technique.</li><li data-list-item-id="ed7d046f33bbb9eb3134a66bc928259c0"><strong>Cohérence</strong> : Assure une expérience utilisateur uniforme à travers tous les sites gouvernementaux.</li></ul><p><strong>Démarrage rapide</strong> : Les templates de démarrage sont disponibles pour créer rapidement un nouveau site DSFR. La documentation complète et les exemples de code facilitent la prise en main.</p><blockquote><p>La meilleur intégration de DSFR : Et Open Source !</p></blockquote><p>Pour plus d’informations ou pour contribuer au projet, visitez le repository GitHub du projet UI Suite DSFR.</p>'
+      format: full_html_dsfr
+      summary: ''
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1779892603
+      last_comment_name: ''
+      last_comment_uid: 2
+      comment_count: 0
+  field_image:
+    -
+      alt: 'DSFR, le Système de Design de l’État.'
+      title: ''
+      width: 1584
+      height: 949
+      entity: 6fbca394-107c-4a1c-9fa7-ba4e9f672d87
+  field_pictogramme:
+    -
+      target_id: 'dsfr_picto:city-hall'
+  field_tags:
+    -
+      entity: 475a6a6a-8f8a-491e-b4da-289b34789614
+    -
+      entity: 65ad84be-28cb-46a5-a926-96672da7f6a8
+    -
+      entity: 51440835-a6e8-4fa4-9049-1fef3bdadf70

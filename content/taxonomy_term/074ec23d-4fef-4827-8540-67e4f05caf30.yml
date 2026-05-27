@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 074ec23d-4fef-4827-8540-67e4f05caf30
+  bundle: tags
+  default_langcode: fr
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Inclusion
+  weight:
+    -
+      value: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /tags/inclusion
+      langcode: fr
+  field_color_schema:
+    -
+      value: yellow-moutarde
+  field_icon:
+    -
+      target_id: 'dsfr:shake-hands-line'

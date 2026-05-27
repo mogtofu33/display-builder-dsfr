@@ -1,0 +1,48 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 197a5598-f23e-4322-98e0-82bcb2f3c4d0
+  bundle: menu_link_content
+  default_langcode: fr
+  depends:
+    3ec3f8b2-9197-4b32-8248-e867adc03226: menu_link_content
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Lien externe'
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      uri: 'https://www.info.gouv.fr'
+      title: ''
+      options:
+        attributes:
+          target: _blank
+          rel: 'noopener external'
+          class:
+            - ''
+        icon: null
+        icon_display: icon_only
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:3ec3f8b2-9197-4b32-8248-e867adc03226'
+  revision_translation_affected:
+    -
+      value: true

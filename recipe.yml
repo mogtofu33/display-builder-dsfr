@@ -1,0 +1,129 @@
+# cSpell:locale en,fr
+name: 'Display Builder with DSFR'
+description: 'Provide basic Display Builder website with DSFR.'
+type: 'Site'
+
+recipes:
+  - display_builder_base
+
+install:
+  - ui_suite_dsfr
+  - ui_suite_dsfr_components
+  - ui_suite_dsfr_utilities
+  - inline_form_errors
+
+  # Language as DSFR is meant with fr language.
+  - language
+  - locale
+  - config_translation
+
+config:
+  # Any configs that already exist will be skipped.
+  strict: false
+
+  import:
+    config_translation: '*'
+    content_translation: '*'
+    language: '*'
+    ui_suite_dsfr: '*'
+
+  actions:
+    system.theme:
+      simpleConfigUpdate:
+        default: ui_suite_dsfr
+
+    system.site:
+      simpleConfigUpdate:
+        name: 'DSFR pour Drupal'
+        slogan: 'Projet de base pour Drupal avec DSFR.'
+        default_langcode: fr
+        page.front: /accueil
+
+    system.date:
+      simpleConfigUpdate:
+        timezone.default: Europe/Paris
+        timezone.user.configurable: false
+        first_day: 1
+        country:
+          default: FR
+
+    language.negotiation:
+      simpleConfigUpdate:
+        url.prefixes.fr: ''
+        url.prefixes.en: 'en'
+        url.domains.fr: ''
+        url.domains.en: 'en'
+        selected_langcode: site_default
+    language.entity.en:
+      simpleConfigUpdate:
+        weight: 2
+    language.entity.fr:
+      simpleConfigUpdate:
+        weight: 1
+    # Try to have fix default language (fr).
+    language.types:
+      simpleConfigUpdate:
+        negotiation.language_interface:
+          enabled:
+            language-selected: -20
+
+    node.type.article:
+      simpleConfigUpdate:
+        third_party_settings.menu_ui.available_menus:
+          - footer
+          - main
+          - footer-menu-1
+          - footer-menu-2
+          - footer-menu-3
+          - footer-menu-4
+          - footer-menu-5
+          - footer-menu-6
+          - footer-bottom
+
+    pathauto.settings:
+      simpleConfigUpdate:
+        punctuation.quotes: 1
+        punctuation.ignore_words: 'a, à, ainsi, alors, après, aussi, avant, avec, car, certes, chez, comme, d, dans, de, dehors, depuis, derrière, des, donc, en, ensuite, envers, et, etc, ici, jusqu, jusque, l, la, le, les, là, mais, même, ni, or, ou, où, par, pendant, pour, près, sans, sauf, selon, sous, sur, tout, un, une, vers, vu'
+
+    easy_breadcrumb.settings:
+      simpleConfigUpdate:
+        applies_admin_routes: false
+        include_home_segment: true
+        home_segment_title: 'Accueil'
+        capitalizator_mode: ucfirst
+
+    sitemap.settings:
+      simpleConfigUpdate:
+        page_title: Plan du site
+        path: /plan-du-site
+        include_css: true
+        plugins.menu:main:
+          enabled: true
+          weight: 0
+          settings:
+            title: ''
+            show_disabled: false
+          id: 'menu:main'
+          provider: sitemap
+
+    views.view.taxonomy_term:
+      simple_config_update:
+        status: false
+
+    # Disable core filter format for override.
+    filter.format.basic_html:
+      simpleConfigUpdate:
+        name: 'Basic HTML (core)'
+        status: false
+        weight: 100
+    filter.format.full_html:
+      simpleConfigUpdate:
+        status: false
+        name: 'Full HTML (core)'
+        weight: 100
+    filter.format.restricted_html:
+      simpleConfigUpdate:
+        weight: 2
+    filter.format.plain_text:
+      simpleConfigUpdate:
+        weight: 10

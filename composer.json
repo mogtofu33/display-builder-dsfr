@@ -1,0 +1,23 @@
+{
+    "name": "drupal/display_builder_dsfr",
+    "description": "Provide a Display Builder Demo website with DSFR.",
+    "keywords": ["recipe", "Drupal recipes", "drupal recipe"],
+    "type": "drupal-recipe",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Jean Valverde",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "drupal/ui_suite_dsfr": "^1.14",
+        "drupal/ui_suite_components": "@dev",
+        "drupal/ui_suite_utilities": "@dev",
+        "gouvernementfr/dsfr": "1.14"
+    },
+    "require-dev": {
+        "drupal/sdc_devel": "^1.0.2",
+        "drupal/display_builder_dev_tools": "@dev"
+    }
+}

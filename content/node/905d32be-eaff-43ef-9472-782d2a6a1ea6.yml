@@ -1,0 +1,39 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 905d32be-eaff-43ef-9472-782d2a6a1ea6
+  bundle: page
+  default_langcode: fr
+  depends:
+    82f28453-89a2-496d-bc54-edf30d2125b1: user
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 82f28453-89a2-496d-bc54-edf30d2125b1
+  title:
+    -
+      value: 'Déclaration d’accessibilité du site'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /declaration-d-accessibilite-du-site
+      langcode: fr
+  body:
+    -
+      value: '<p>Le [..] s’engage à rendre ses sites Internet, intranet, extranet et ses applications mobiles accessibles conformément à l’article 47 de la loi n° 2005-102 du 11 février 2005.</p><h2 id="etat-de-conformite">État de conformité</h2><p><b>Niveau de conformité : AA</b></p><p>Ce site respecte les normes WCAG 2.1 niveau AA, garantissant une accessibilité satisfaisante pour la plupart des utilisateurs, y compris ceux en situation de handicap.</p><hr /><h2 id="resultat-des-tests">Résultat des tests</h2><p><b>Audit annuel d’accessibilité</b></p><p>Des tests automatiques et manuels sont effectués chaque année pour vérifier la conformité aux normes d’accessibilité. Les échecs isolés sont documentés et un plan d’action de correction est établi.</p><p>Les utilisateurs peuvent rapporter des difficultés d’accés qu’ils rencontrent. Ces signalements sont analysés pour améliorer continuellement l’expérience de tous.</p><hr /><h2 id="contenus-inaccessibles">Contenus inaccessibles</h2><p>Les contenus listés ci-dessous ne sont pas accessibles pour les raisons suivantes.</p><p><b>Contenus externes</b> : Certains contenus provenant de prestataires tiers (vidéos, documents embarqués) peuvent présenter des limitations d’accessibilité. Des alternatives sont fournies ou en cours de développement.</p><hr /><h2 id="etablissement-de-cette-declaration-daccessibilite">Établissement de cette déclaration d’accessibilité</h2><p><b>Engagement vers l’accessibilité</b> : Cette déclaration témoigne de notre détermination à servir tous les citoyens, quelles que soient leurs capacités. L’accessibilité n’est pas une option mais une priorité stratégique.</p><p>Pour contacter l’équipe accésibilité ou signaler un défaut, veuillez utiliser le formulaire de contact dédié sur ce site.</p>'
+      format: full_html_dsfr
+      summary: ''

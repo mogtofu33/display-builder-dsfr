@@ -1,0 +1,68 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 88144040-6b01-40f6-8e1a-fab82dc37c10
+  bundle: article
+  default_langcode: fr
+  depends:
+    82f28453-89a2-496d-bc54-edf30d2125b1: user
+    ec2d2d37-b47d-4c5d-a5e7-75cdba9068b1: file
+    ea8714e5-3ef3-4c13-b3e1-0a692c0e27ec: taxonomy_term
+    cea19643-9d56-42cf-bcf9-af4c49ac8cb7: taxonomy_term
+    a8632277-7f63-43af-8c51-9e0cbd24dbd5: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 82f28453-89a2-496d-bc54-edf30d2125b1
+  title:
+    -
+      value: 'Déploiement de nouveaux espaces France Services'
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /article/deploiement-de-nouveaux-espaces-france-services
+      langcode: fr
+  body:
+    -
+      value: '<p>De nouveaux espaces France Services ouvrent progressivement afin de renforcer la proximité des services publics et d’accompagner les usagers dans leurs démarches administratives et numériques du quotidien.</p><hr /><p><b>Un guichet unique pour les citoyens</b> : Les espaces France Services offrent un accès simplifié aux services publics locaux. Citizens can accomplish most of their administrative tasks at a single location without traveling to multiple offices.</p><p>Des conseillers numériques sont présents pour accompagner les usagers dans l’utilisation des plateformes en ligne. Ils assistent notamment les personnes éloignées du numérique pour accéder aux services essentiels.</p><hr /><p><b>Services proposés</b> : L’offre de services inclut les démarches sociales, fiscales, de logement, d’emploi et bien d’autres. Les formulaires administratifs sont pré-remplis quand c’est possible pour simplifier les procédures.</p><p>Des partenaires publics et privés collaborent pour élargir continuellement l’offre de services disponibles. Les horaires d’ouverture sont pensés pour la commodité des usagers, avec des créneaux en fin de journée et le samedi.</p><p><b>Aide numérique personnalisée</b> : Au-delà de l’accompagnement administrative, les équipes des espaces France Services proposent des formations aux outils numériques. Des ateliers collectifs permettent d’acquérir les compétences essentielles pour naviguer en ligne.</p>'
+      format: full_html_dsfr
+      summary: ''
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1779892603
+      last_comment_name: ''
+      last_comment_uid: 2
+      comment_count: 0
+  field_image:
+    -
+      alt: 'France Services'
+      title: ''
+      width: 1440
+      height: 808
+      entity: ec2d2d37-b47d-4c5d-a5e7-75cdba9068b1
+  field_pictogramme:
+    -
+      target_id: 'dsfr_picto:community'
+  field_tags:
+    -
+      entity: ea8714e5-3ef3-4c13-b3e1-0a692c0e27ec
+    -
+      entity: cea19643-9d56-42cf-bcf9-af4c49ac8cb7
+    -
+      entity: a8632277-7f63-43af-8c51-9e0cbd24dbd5

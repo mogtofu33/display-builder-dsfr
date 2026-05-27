@@ -1,0 +1,43 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 84a38d2f-2f9d-479f-ab97-2d5d4fe8a007
+  bundle: menu_link_content
+  default_langcode: fr
+  depends:
+    7c896b70-9297-4e9d-9cd2-d4b4ba5ccb56: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Gestion des cookies'
+  menu_name:
+    -
+      value: footer-bottom
+  link:
+    -
+      title: ''
+      options:
+        attributes:
+          class:
+            - ''
+        icon: null
+        icon_display: icon_only
+      target_uuid: 7c896b70-9297-4e9d-9cd2-d4b4ba5ccb56
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

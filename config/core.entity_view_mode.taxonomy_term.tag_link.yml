@@ -1,0 +1,10 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.tag_link
+label: 'Tag link'
+description: null
+targetEntityType: taxonomy_term
+cache: true

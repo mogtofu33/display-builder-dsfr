@@ -1,0 +1,54 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 61d73698-ff11-4831-8f50-487c3c75f375
+  bundle: menu_link_content
+  default_langcode: fr
+  depends:
+    822fefb9-7432-44fd-8791-dc2cbac75c25: menu_link_content
+    f66f9bb4-986b-4293-a8de-7c83dfb7439f: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Lien contenu 1 icône'
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      title: ''
+      options:
+        attributes:
+          class:
+            - ''
+        icon:
+          target_id: 'dsfr:feedback-line'
+          settings:
+            dsfr:
+              size: xs
+              color: default--success
+              alt: ''
+              class: ''
+        icon_display: before
+      target_uuid: f66f9bb4-986b-4293-a8de-7c83dfb7439f
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: -50
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:822fefb9-7432-44fd-8791-dc2cbac75c25'
+  revision_translation_affected:
+    -
+      value: true
