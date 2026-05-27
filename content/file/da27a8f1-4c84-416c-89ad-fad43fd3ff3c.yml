@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: da27a8f1-4c84-416c-89ad-fad43fd3ff3c
+  default_langcode: fr
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: france_services.jpg
+  uri:
+    -
+      value: 'public://images/france_services.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 218355
+  status:
+    -
+      value: true

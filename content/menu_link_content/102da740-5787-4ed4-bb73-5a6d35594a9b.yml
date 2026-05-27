@@ -1,0 +1,48 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 102da740-5787-4ed4-bb73-5a6d35594a9b
+  bundle: menu_link_content
+  default_langcode: fr
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Autre accès'
+  menu_name:
+    -
+      value: quick-access
+  link:
+    -
+      uri: 'internal:/'
+      title: ''
+      options:
+        attributes:
+          class:
+            - ''
+        icon:
+          target_id: 'dsfr:book-2-line'
+          settings:
+            dsfr:
+              size: xs
+              color: action-high--blue-france
+              alt: ''
+              class: ''
+        icon_display: before
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

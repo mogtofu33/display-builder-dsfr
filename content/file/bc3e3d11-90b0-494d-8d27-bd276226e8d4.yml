@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: bc3e3d11-90b0-494d-8d27-bd276226e8d4
+  default_langcode: fr
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: webapp.jpg
+  uri:
+    -
+      value: 'public://images/webapp.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 127246
+  status:
+    -
+      value: true

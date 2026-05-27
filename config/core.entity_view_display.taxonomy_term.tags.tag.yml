@@ -1,0 +1,126 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.tag
+    - field.field.taxonomy_term.tags.field_color_schema
+    - field.field.taxonomy_term.tags.field_icon
+    - taxonomy.vocabulary.tags
+  module:
+    - display_builder
+    - ui_icons_field
+    - ui_patterns
+    - ui_patterns_field_formatters
+third_party_settings:
+  display_builder:
+    profile: advanced
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_dsfr:tag'
+            variant_id:
+              source_id: select
+              source:
+                value: default
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              link:
+                source_id: url
+                source:
+                  value: ''
+              dismissible:
+                source_id: checkbox
+                source:
+                  value: 0
+              color_schema:
+                source_id: select
+                source:
+                  value: ''
+            slots:
+              label:
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:taxonomy_term:tags:field_icon'
+                      'field:taxonomy_term:tags:field_icon':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:taxonomy_term:tags:field_icon'
+                              source:
+                                type: icon_formatter
+                                settings:
+                                  dsfr:
+                                    size: xs
+                                    color: ''
+                                    alt: ''
+                                    class: ''
+                                  icon_settings:
+                                    dsfr:
+                                      size: xs
+                                      color: ''
+                                      alt: ''
+                                      class: ''
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                      saved_values:
+                        size: xs
+                        color: ''
+                        alt: ''
+                        class: ''
+                    node_id: 9f69e2872ad00628
+                    third_party_settings:
+                      styles:
+                        selected: {  }
+                        extra: ''
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'display_builder:inline'
+                        variant_id: null
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          tag:
+                            source_id: select
+                            source:
+                              value: span
+                          content:
+                            source_id: entity_field
+                            source:
+                              derivable_context: 'field:taxonomy_term:tags:name'
+                              'field:taxonomy_term:tags:name':
+                                value:
+                                  source_id: 'field_property:taxonomy_term:name:value'
+                        slots: {  }
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: d7b421ecf52628c4
+                    third_party_settings:
+                      styles:
+                        selected:
+                          spacing_margin_left: fr-ml-1w
+                        extra: ''
+            third_party_settings: ''
+            node_id: ''
+        node_id: 2e59d4772d2c6bbc
+id: taxonomy_term.tags.tag
+targetEntityType: taxonomy_term
+bundle: tags
+mode: tag
+content: {  }
+hidden:
+  description: true
+  field_color_schema: true
+  field_icon: true
+  langcode: true

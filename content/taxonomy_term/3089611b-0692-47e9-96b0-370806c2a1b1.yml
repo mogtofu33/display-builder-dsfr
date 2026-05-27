@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 3089611b-0692-47e9-96b0-370806c2a1b1
+  bundle: tags
+  default_langcode: fr
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Mobilité
+  weight:
+    -
+      value: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /tags/mobilite
+      langcode: fr
+  field_color_schema:
+    -
+      value: green-emeraude
+  field_icon:
+    -
+      target_id: 'dsfr:bike-line'

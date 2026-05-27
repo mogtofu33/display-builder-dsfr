@@ -1,0 +1,22 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pictogramme
+    - node.type.article
+  module:
+    - ui_icons_field
+id: node.article.field_pictogramme
+field_name: field_pictogramme
+entity_type: node
+bundle: article
+label: Pictogramme
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_icon_pack:
+    dsfr_picto: dsfr_picto
+field_type: ui_icon

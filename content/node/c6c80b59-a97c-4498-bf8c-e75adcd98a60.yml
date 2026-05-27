@@ -1,0 +1,65 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c6c80b59-a97c-4498-bf8c-e75adcd98a60
+  bundle: article
+  default_langcode: fr
+  depends:
+    82f28453-89a2-496d-bc54-edf30d2125b1: user
+    c55ddbbf-9701-4658-90af-66d2a00be740: file
+    725613cc-b860-41e5-a4c0-5e02db3d9236: taxonomy_term
+    1ab527f2-e82d-41d2-b7f2-ba6264dc754b: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 82f28453-89a2-496d-bc54-edf30d2125b1
+  title:
+    -
+      value: 'Accélération des projets de rénovation énergétique des bâtiments publics'
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /article/acceleration-des-projets-de-renovation-energetique-des-batiments-publics
+      langcode: fr
+  body:
+    -
+      value: '<p>Plusieurs projets de rénovation énergétique sont engagés dans les bâtiments publics afin de réduire la consommation d’énergie et améliorer le confort des usagers et des agents publics.</p><hr /><p><b>Réduction de l’empreinte carbone</b> : Les bâtiments publics représentent une part significative des émissions de gaz à effet de serre. La rénovation thermique de ces installations contribue directement aux objectifs climatiques de la France.</p><p>L’isolation améliorée, les systèmes de chauffage performants et les énergies renouvelables réduisent la facture énergétique. Les économies réalisées permettent de redéployer les budgets vers d’autres priorités.</p><hr /><p><b>Amélioration du confort</b> : Au-delà des économies, ces travaux augmentent significativement le confort thermique et acoustique des bâtiments. Les usagers et les agents bénéficient d’un environnement de travail plus sain et agréable.</p><p>L’amélioration de la qualité de l’air intérieur contribue à la santé des occupants. La lumière naturelle accrue renforce le bien-être des personnes au travail et aux études.</p><p><b>Technologies vertes</b> : Les panneaux solaires, les pompes à chaleur et les systèmes de gestion intelligents du bâtiment sont progressivement déployés. Ces technologies innovantes positionnent les bâtiments publics comme modèles de performance énergétique.</p>'
+      format: full_html_dsfr
+      summary: ''
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1779892603
+      last_comment_name: ''
+      last_comment_uid: 2
+      comment_count: 0
+  field_image:
+    -
+      alt: 'Rénovation énergétique'
+      title: ''
+      width: 0
+      height: 0
+      entity: c55ddbbf-9701-4658-90af-66d2a00be740
+  field_pictogramme:
+    -
+      target_id: 'dsfr_picto:leaf'
+  field_tags:
+    -
+      entity: 725613cc-b860-41e5-a4c0-5e02db3d9236
+    -
+      entity: 1ab527f2-e82d-41d2-b7f2-ba6264dc754b

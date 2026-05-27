@@ -1,0 +1,41 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 84a38d2f-2f9d-479f-ab97-2d5d4fe8a003
+  bundle: menu_link_content
+  default_langcode: fr
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Plan du site'
+  menu_name:
+    -
+      value: footer-bottom
+  link:
+    -
+      uri: 'internal:/plan-du-site'
+      title: ''
+      options:
+        attributes:
+          class:
+            - ''
+        icon: null
+        icon_display: icon_only
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

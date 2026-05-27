@@ -1,0 +1,68 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 83cb6584-a76f-421c-9237-db1874b9f410
+  bundle: article
+  default_langcode: fr
+  depends:
+    82f28453-89a2-496d-bc54-edf30d2125b1: user
+    f346c3c7-1896-4e4c-8c00-67560c4dbf3e: file
+    b06fda05-46e7-4b04-a030-82cc7807bbaf: taxonomy_term
+    3089611b-0692-47e9-96b0-370806c2a1b1: taxonomy_term
+    cea19643-9d56-42cf-bcf9-af4c49ac8cb7: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 82f28453-89a2-496d-bc54-edf30d2125b1
+  title:
+    -
+      value: 'Modernisation des infrastructures de transport public'
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /article/modernisation-des-infrastructures-de-transport-public
+      langcode: fr
+  body:
+    -
+      value: '<p>Plusieurs projets de modernisation des infrastructures de transport public sont engagés afin d’améliorer la qualité de service pour les usagers.</p><p>Les travaux concernent le renouvellement des équipements, l’accessibilité des stations et le développement des mobilités durables.</p><hr /><p><b>Renouvellement du parc roulant</b> : Les autobus et tramways vieillissants sont progressivement remplacés par des véhicules modernes et écologiques. Ces nouveaux équipements offrent plus de confort, de fiabilité et une consommation énergétique réduite.</p><p>Les investissements portent notamment sur l’électrification des flottes et l’amélioration de l’accessibilité intérieure des véhicules. Une meilleure climatisation et un système d’information en temps réel améliorent l’expérience des passagers.</p><hr /><p><b>Amélioration de l’accessibilité</b> : Toutes les stations et arrêts doivent être accessibles aux personnes à mobilité réduite. Des rampes d’accès, des ascenseurs et des éclairages améliorés sont installés progressivement.</p><p>Les traversées piétonnes et les abris sont aménagés pour offrir un confort accru. Une signalétique claire et une information en plusieurs formats facilitent la navigation dans le réseau.</p><p><b>Vers une mobilité durable</b> : Le développement des transports en commun s’accompagne d’une réduction des émissions de gaz à effet de serre. Les objectifs environnementaux et sociaux sont au cœur de cette modernisation.</p>'
+      format: full_html_dsfr
+      summary: ''
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1779892603
+      last_comment_name: ''
+      last_comment_uid: 2
+      comment_count: 0
+  field_image:
+    -
+      alt: Electrique
+      title: ''
+      width: 1440
+      height: 808
+      entity: f346c3c7-1896-4e4c-8c00-67560c4dbf3e
+  field_pictogramme:
+    -
+      target_id: 'dsfr_picto:map'
+  field_tags:
+    -
+      entity: b06fda05-46e7-4b04-a030-82cc7807bbaf
+    -
+      entity: 3089611b-0692-47e9-96b0-370806c2a1b1
+    -
+      entity: cea19643-9d56-42cf-bcf9-af4c49ac8cb7

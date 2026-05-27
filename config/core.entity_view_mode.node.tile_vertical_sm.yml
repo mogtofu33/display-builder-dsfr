@@ -1,0 +1,10 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.tile_vertical_sm
+label: 'Tile vertical small'
+description: null
+targetEntityType: node
+cache: true

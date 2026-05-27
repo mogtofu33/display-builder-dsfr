@@ -1,0 +1,259 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+    - views.view.user_block
+  module:
+    - display_builder
+    - image
+    - ui_patterns
+    - ui_patterns_field_formatters
+    - ui_suite_dsfr_components
+    - user
+    - views
+  theme:
+    - ui_suite_dsfr
+third_party_settings:
+  display_builder:
+    profile: advanced
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_dsfr:grid_row_2'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_type:
+                source_id: select
+                source:
+                  value: container
+              with_gutters:
+                source_id: checkbox
+                source:
+                  value: '1'
+              horizontal_align:
+                source_id: select
+                source:
+                  value: ''
+              vertical_align:
+                source_id: select
+                source:
+                  value: top
+              cols:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              cols_sm:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              cols_md:
+                source_id: selects
+                source:
+                  value:
+                    - '2'
+                    - ''
+              cols_lg:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              cols_xl:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              offset:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              offset_sm:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              offset_md:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              offset_lg:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              offset_xl:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              col_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              first_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              second_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+            slots:
+              first:
+                sources:
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_dsfr_components:tile'
+                        variant_id:
+                          source_id: select
+                          source:
+                            value: default
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          title_tag:
+                            source_id: select
+                            source:
+                              value: h3
+                          link:
+                            source_id: url
+                            source:
+                              value: ''
+                          blank:
+                            source_id: checkbox
+                            source:
+                              value: 0
+                          variation:
+                            source_id: select
+                            source:
+                              value: ''
+                          download:
+                            source_id: checkbox
+                            source:
+                              value: 0
+                        slots:
+                          image:
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:user:user:user_picture'
+                                  'field:user:user:user_picture':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:user:user:user_picture'
+                                          source:
+                                            type: image
+                                            label: hidden
+                                            settings:
+                                              image_link: content
+                                              image_style: thumbnail
+                                              image_loading:
+                                                attribute: lazy
+                                            third_party_settings: {  }
+                                            weight: 0
+                                            region: content
+                                node_id: f9e377e46631ed22
+                          title:
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:user:user:name'
+                                  'field:user:user:name':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:user:user:name'
+                                          source:
+                                            type: string
+                                            settings:
+                                              link_to_entity: false
+                                            third_party_settings: {  }
+                                node_id: 94ae122533bbb1f9
+                          detail:
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:user:user:roles'
+                                  'field:user:user:roles':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:user:user:roles'
+                                          source:
+                                            type: entity_reference_label
+                                            settings:
+                                              link: 0
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: 5a48ca3ed49d68af
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: 40977e2190813e9f
+              second:
+                sources:
+                  -
+                    source_id: block
+                    source:
+                      plugin_id: 'views_block:user_block-block_1'
+                    node_id: 1b91d8ba2261aa87
+            third_party_settings: ''
+            node_id: ''
+        node_id: 936be48af8f75d10
+_core:
+  default_config_hash: mZLyuWM9CQx2ZJVqFGSbzgFnHzudVbHBYmdU256A5Wk
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  member_for:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  user_picture:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,135 @@
+uuid: 3f7f5424-03f9-46b3-aa4a-34470aaa0e82
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html_dsfr
+  module:
+    - ckeditor5
+_core:
+  default_config_hash: ZWEqUovWKKujdEtjmqJ5pYl_4u3zShmW7i7s3qiJdjU
+format: full_html_dsfr
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - style
+      - UiStylesInline
+      - heading
+      - '|'
+      - bold
+      - italic
+      - strikethrough
+      - superscript
+      - subscript
+      - removeFormat
+      - code
+      - '|'
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - alignment
+      - indent
+      - outdent
+      - '-'
+      - '|'
+      - icon
+      - blockQuote
+      - drupalInsertImage
+      - insertTable
+      - horizontalLine
+      - '|'
+      - codeBlock
+      - '|'
+      - showBlocks
+      - sourceEditing
+  plugins:
+    ckeditor5_alignment:
+      enabled_alignments:
+        - center
+        - justify
+        - left
+        - right
+    ckeditor5_codeBlock:
+      languages:
+        -
+          label: 'Plain text'
+          language: plaintext
+        -
+          label: C
+          language: c
+        -
+          label: 'C#'
+          language: cs
+        -
+          label: C++
+          language: cpp
+        -
+          label: CSS
+          language: css
+        -
+          label: Diff
+          language: diff
+        -
+          label: HTML
+          language: html
+        -
+          label: Java
+          language: java
+        -
+          label: JavaScript
+          language: javascript
+        -
+          label: PHP
+          language: php
+        -
+          label: Python
+          language: python
+        -
+          label: Ruby
+          language: ruby
+        -
+          label: TypeScript
+          language: typescript
+        -
+          label: XML
+          language: xml
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_imageResize:
+      allow_resize: true
+    ckeditor5_list:
+      properties:
+        reversed: true
+        startIndex: true
+        styles: true
+      multiBlock: true
+    ckeditor5_sourceEditing:
+      allowed_tags: {  }
+    ckeditor5_style:
+      styles:
+        -
+          label: 'Mise en avant'
+          element: '<p class="fr-highlight">'
+    ui_styles_ckeditor5_uiStylesInline:
+      enabled_styles:
+        - typography
+        - alternative-font
+        - text_color
+        - background
+        - display_print
+        - visually_hidden
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: null
+  max_dimensions:
+    width: null
+    height: null

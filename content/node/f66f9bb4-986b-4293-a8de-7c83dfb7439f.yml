@@ -1,0 +1,68 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f66f9bb4-986b-4293-a8de-7c83dfb7439f
+  bundle: article
+  default_langcode: fr
+  depends:
+    82f28453-89a2-496d-bc54-edf30d2125b1: user
+    bc3e3d11-90b0-494d-8d27-bd276226e8d4: file
+    9e4d1951-ee35-4369-8304-229852974892: taxonomy_term
+    ea8714e5-3ef3-4c13-b3e1-0a692c0e27ec: taxonomy_term
+    96344c18-1c02-4cfe-8075-5b29a607a100: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 82f28453-89a2-496d-bc54-edf30d2125b1
+  title:
+    -
+      value: 'Simplification des démarches administratives en ligne'
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /article/simplification-des-demarches-administratives-en-ligne
+      langcode: fr
+  body:
+    -
+      value: '<p>Le Gouvernement poursuit la modernisation des services publics numériques afin de faciliter les démarches administratives des citoyens.</p><p>De nouveaux parcours simplifiés sont progressivement déployés pour réduire les délais de traitement et améliorer l’accessibilité des plateformes en ligne sur l’ensemble du territoire.</p><hr /><p><b>Simplification des parcours utilisateur</b> : Les démarches administratives sont réorganisées autour des besoins de l’usager plutôt que de la structure administrative. Les formulaires sont réduits à l’essentiel et les données pré-remplies quand possible.</p><p>Une seule connexion suffit pour accéder à l’ensemble des services publics en ligne via France Connect. L’authentification sécurisée unifie l’accès sans multiplier les identifiants pour chaque service.</p><hr /><p><b>Réduction des délais de traitement</b> : L’automatisation des traitements administratifs simples permet une réponse immédiate à l’usager. Les cas complexes sont traités en priorité par les agents dédiés.</p><p>Le suivi en temps réel de la demande est accessible par l’usager. Les notifications informent à chaque étape de l’avancement du dossier, éliminant l’incertitude et l’inquiétude.</p><p><b>Accessibilité pour tous</b> : Les plateformes respectent scrupuleusement les normes d’accessibilité WCAG pour les personnes en situation de handicap. Une assistance utilisateur personnalisée complète les moyens techniques.</p>'
+      format: full_html_dsfr
+      summary: ''
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1779892603
+      last_comment_name: ''
+      last_comment_uid: 2
+      comment_count: 0
+  field_image:
+    -
+      alt: 'Démarches administratives en ligne'
+      title: ''
+      width: 1200
+      height: 675
+      entity: bc3e3d11-90b0-494d-8d27-bd276226e8d4
+  field_pictogramme:
+    -
+      target_id: 'dsfr_picto:document-add'
+  field_tags:
+    -
+      entity: 9e4d1951-ee35-4369-8304-229852974892
+    -
+      entity: ea8714e5-3ef3-4c13-b3e1-0a692c0e27ec
+    -
+      entity: 96344c18-1c02-4cfe-8075-5b29a607a100

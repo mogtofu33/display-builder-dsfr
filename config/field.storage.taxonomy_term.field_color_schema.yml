@@ -1,0 +1,71 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - options
+    - taxonomy
+id: taxonomy_term.field_color_schema
+field_name: field_color_schema
+entity_type: taxonomy_term
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: green-tilleul-verveine
+      label: 'Tilleul Verveine'
+    -
+      value: green-bourgeon
+      label: Bourgeon
+    -
+      value: green-emeraude
+      label: Emeraude
+    -
+      value: green-menthe
+      label: Menthe
+    -
+      value: green-archipel
+      label: Archipel
+    -
+      value: blue-ecume
+      label: Ecume
+    -
+      value: blue-cumulus
+      label: Cumulus
+    -
+      value: purple-glycine
+      label: Glycine
+    -
+      value: pink-macaron
+      label: Macaron
+    -
+      value: pink-tuile
+      label: Tuile
+    -
+      value: yellow-tournesol
+      label: Tournesol
+    -
+      value: yellow-moutarde
+      label: Moutarde
+    -
+      value: orange-terre-battue
+      label: 'Terre Battue'
+    -
+      value: brown-cafe-creme
+      label: 'Cafe creme'
+    -
+      value: brown-caramel
+      label: Caramel
+    -
+      value: brown-opera
+      label: Opera
+    -
+      value: beige-gris-galet
+      label: 'Gris Galet'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

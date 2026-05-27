@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 51440835-a6e8-4fa4-9049-1fef3bdadf70
+  bundle: tags
+  default_langcode: fr
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Outils
+  description:
+    -
+      value: '<p>Liste les outils compatible avec DSFR.</p>'
+      format: basic_html_dsfr
+  weight:
+    -
+      value: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /tags/outils
+      langcode: fr
+  field_color_schema:
+    -
+      value: green-tilleul-verveine
+  field_icon:
+    -
+      target_id: 'dsfr:tools-line'

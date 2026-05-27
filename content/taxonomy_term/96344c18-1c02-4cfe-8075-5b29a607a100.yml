@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 96344c18-1c02-4cfe-8075-5b29a607a100
+  bundle: tags
+  default_langcode: fr
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Administration
+  weight:
+    -
+      value: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /tags/administration
+      langcode: fr
+  field_color_schema:
+    -
+      value: blue-cumulus
+  field_icon:
+    -
+      target_id: 'dsfr:building-fill'

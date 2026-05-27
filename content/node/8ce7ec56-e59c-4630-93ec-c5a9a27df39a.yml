@@ -1,0 +1,65 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 8ce7ec56-e59c-4630-93ec-c5a9a27df39a
+  bundle: article
+  default_langcode: fr
+  depends:
+    82f28453-89a2-496d-bc54-edf30d2125b1: user
+    64fde6fa-f8fa-4b03-ac51-e4f15f20397a: file
+    99244222-ebb5-46d0-967d-d0985d42ec19: taxonomy_term
+    202ff748-ea26-47f4-b20f-8e74a1072aec: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 82f28453-89a2-496d-bc54-edf30d2125b1
+  title:
+    -
+      value: 'Soutien aux initiatives en faveur de la biodiversité'
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /article/soutien-aux-initiatives-en-faveur-de-la-biodiversite
+      langcode: fr
+  body:
+    -
+      value: '<p>De nouvelles actions locales sont soutenues pour préserver la biodiversité et valoriser les espaces naturels.</p><p>Les projets retenus concernent notamment la protection des espèces, la restauration des milieux naturels et la sensibilisation du grand public aux enjeux environnementaux.</p><hr /><p><b>Protection des espèces menacées</b> : Les initiatives sélectionnées ciblent prioritairement les espèces en danger et les habitats fragiles. Des programmes de reproduction en captivité et de réintroduction dans la nature sont mis en œuvre.</p><p>La protection légale des espèces est complétée par des actions concrètes de gestion des populations. Les chercheurs travaillent en partenariat avec les gestionnaires d’espaces naturels pour optimiser l’efficacité des programmes.</p><hr /><p><b>Restauration des écosystèmes</b> : Les projets incluent la plantation de corridors écologiques, la restauration de zones humides et la nettoyage des milieux pollués. Ces actions rendent aux espaces naturels leur fonction écologique première.</p><p>Les investissements dans les technologies de surveillance permettent de suivre l’évolution des populations et des habitats. Les données collectées guident les ajustements des stratégies de conservation.</p><p><b>Éducation et sensibilisation</b> : Des événements publics et des programmes scolaires font découvrir la richesse de la biodiversité locale. La mobilisation citoyenne est essentielle pour le succès long terme des initiatives.</p>'
+      format: full_html_dsfr
+      summary: ''
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1779892603
+      last_comment_name: ''
+      last_comment_uid: 2
+      comment_count: 0
+  field_image:
+    -
+      alt: Biodiversité
+      title: ''
+      width: 1440
+      height: 808
+      entity: 64fde6fa-f8fa-4b03-ac51-e4f15f20397a
+  field_pictogramme:
+    -
+      target_id: 'dsfr_picto:leaf'
+  field_tags:
+    -
+      entity: 99244222-ebb5-46d0-967d-d0985d42ec19
+    -
+      entity: 202ff748-ea26-47f4-b20f-8e74a1072aec

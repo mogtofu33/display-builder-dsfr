@@ -1,0 +1,622 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - display_builder.profile.default
+    - system.menu.footer
+    - system.menu.footer-bottom
+    - system.menu.main
+    - system.menu.tools
+  module:
+    - display_builder
+    - search
+    - system
+    - token
+    - ui_patterns
+    - ui_suite_dsfr_components
+  theme:
+    - ui_suite_dsfr
+id: default
+label: Default
+weight: -9
+conditions: {  }
+profile: default
+sources:
+  -
+    node_id: 694120ef9b2f9
+    source_id: component
+    source:
+      component:
+        component_id: 'ui_suite_dsfr_components:header'
+        variant_id: null
+        props:
+          attributes:
+            source_id: attributes
+            source:
+              value: ''
+          id:
+            source_id: textfield
+            source:
+              value: ''
+          logo_text:
+            source_id: textfield
+            source:
+              value: 'Intitulé Officiel'
+          service_title:
+            source_id: token
+            source:
+              value: '[site:name]'
+          service_tagline:
+            source_id: token
+            source:
+              value: '[site:slogan]'
+          home_url:
+            source_id: token
+            source:
+              value: '[site:url]'
+          home_text:
+            source_id: textfield
+            source:
+              value: "Retour à l'accueil du site"
+          link_title:
+            source_id: token
+            source:
+              value: '[site:name]'
+          tools:
+            source_id: menu
+            source:
+              menu: quick-access
+              level: '1'
+              depth: '1'
+          navbar:
+            source_id: menu
+            source:
+              menu: main
+              level: '1'
+              depth: '3'
+          is_mega_menu:
+            source_id: checkbox
+            source:
+              value: '1'
+        slots:
+          operator_logo:
+            sources:
+              -
+                source_id: block
+                source:
+                  plugin_id: system_branding_block
+                  system_branding_block:
+                    id: system_branding_block
+                    label: 'Site branding'
+                    label_display: ''
+                    provider: system
+                    use_site_logo: true
+                    use_site_name: false
+                    use_site_slogan: false
+                node_id: a3e7f53dc62f9d95
+          tools_search:
+            sources:
+              -
+                node_id: 69412016bb773
+                source_id: block
+                source:
+                  plugin_id: search_form_block
+          tools_links:
+            sources:
+              -
+                node_id: 694162b1b7e6e
+                source_id: component
+                source:
+                  component:
+                    component_id: 'ui_suite_dsfr_components:display_button'
+                    variant_id:
+                      source_id: select
+                      source:
+                        value: default
+                    props:
+                      attributes:
+                        source_id: attributes
+                        source:
+                          value: ''
+                    slots:
+                      label:
+                        sources:
+                          -
+                            node_id: 69411d94b3278
+                            source_id: textfield
+                            source:
+                              value: "Paramètres d'affichage"
+                    third_party_settings: ''
+                    node_id: ''
+        third_party_settings: ''
+        node_id: ''
+    third_party_settings:
+      styles:
+        selected:
+          spacing_margin_bottom: fr-mb-1v
+        extra: ''
+  -
+    source_id: component
+    source:
+      component:
+        component_id: 'ui_suite_dsfr:grid_row_1'
+        variant_id: null
+        props:
+          attributes:
+            source_id: attributes
+            source:
+              value: ''
+          container_type:
+            source_id: select
+            source:
+              value: container
+          with_gutters:
+            source_id: checkbox
+            source:
+              value: 0
+          horizontal_align:
+            source_id: select
+            source:
+              value: ''
+          vertical_align:
+            source_id: select
+            source:
+              value: ''
+          col:
+            source_id: select
+            source:
+              value: ''
+          col_sm:
+            source_id: select
+            source:
+              value: ''
+          col_md:
+            source_id: select
+            source:
+              value: ''
+          col_lg:
+            source_id: select
+            source:
+              value: ''
+          col_xl:
+            source_id: select
+            source:
+              value: ''
+          offset:
+            source_id: select
+            source:
+              value: ''
+          offset_sm:
+            source_id: select
+            source:
+              value: ''
+          offset_md:
+            source_id: select
+            source:
+              value: ''
+          offset_lg:
+            source_id: select
+            source:
+              value: ''
+          offset_xl:
+            source_id: select
+            source:
+              value: ''
+          container_attributes:
+            source_id: attributes
+            source:
+              value: ''
+          col_attributes:
+            source_id: attributes
+            source:
+              value: ''
+        slots:
+          content:
+            sources:
+              -
+                node_id: 6943fb35ea6df
+                source_id: component
+                source:
+                  component:
+                    component_id: 'ui_suite_dsfr:breadcrumb'
+                    variant_id: null
+                    props:
+                      items:
+                        source_id: breadcrumb
+                    slots: {  }
+              -
+                source_id: block
+                source:
+                  plugin_id: system_messages_block
+                node_id: 990ede3434d34bb3
+              -
+                source_id: page_title
+                source: {  }
+                node_id: 68dcc6c779621
+                third_party_settings:
+                  styles:
+                    selected:
+                      spacing_margin_bottom: fr-mb-2w
+                      spacing_margin_top: fr-mt-2w
+                    extra: ''
+              -
+                source_id: block
+                source:
+                  plugin_id: local_tasks_block
+                third_party_settings:
+                  styles:
+                    selected:
+                      spacing_margin_bottom: fr-mb-3w
+                node_id: 694115986d330
+        third_party_settings: ''
+        node_id: ''
+    node_id: 80b60e8d2c6af53f
+  -
+    node_id: 68dcc8becbc82
+    source_id: component
+    source:
+      component:
+        component_id: 'ui_suite_dsfr:grid_row_1'
+        variant_id: null
+        props:
+          attributes:
+            source_id: attributes
+            source:
+              value: ''
+          container_type:
+            source_id: select
+            source:
+              value: container
+          with_gutters:
+            source_id: checkbox
+            source:
+              value: 0
+          horizontal_align:
+            source_id: select
+            source:
+              value: ''
+          vertical_align:
+            source_id: select
+            source:
+              value: ''
+          col:
+            source_id: select
+            source:
+              value: ''
+          col_sm:
+            source_id: select
+            source:
+              value: ''
+          col_md:
+            source_id: select
+            source:
+              value: ''
+          col_lg:
+            source_id: select
+            source:
+              value: ''
+          col_xl:
+            source_id: select
+            source:
+              value: ''
+          offset:
+            source_id: select
+            source:
+              value: ''
+          offset_sm:
+            source_id: select
+            source:
+              value: ''
+          offset_md:
+            source_id: select
+            source:
+              value: ''
+          offset_lg:
+            source_id: select
+            source:
+              value: ''
+          offset_xl:
+            source_id: select
+            source:
+              value: ''
+          container_attributes:
+            source_id: attributes
+            source:
+              value: ''
+          col_attributes:
+            source_id: attributes
+            source:
+              value: ''
+        slots:
+          content:
+            sources:
+              -
+                source_id: main_page_content
+                source: {  }
+                node_id: 68dcc6c779627
+        third_party_settings: ''
+        node_id: ''
+  -
+    source_id: component
+    source:
+      component:
+        component_id: 'ui_suite_dsfr_components:footer'
+        variant_id: null
+        props:
+          attributes:
+            source_id: attributes
+            source:
+              value: ''
+          menu_top_count:
+            source_id: number
+            source:
+              value: '6'
+          menu_content:
+            source_id: menu
+            source:
+              menu: footer
+              level: '1'
+              depth: '1'
+          menu_bottom:
+            source_id: menu
+            source:
+              menu: footer-bottom
+              level: '1'
+              depth: '1'
+          home_url:
+            source_id: token
+            source:
+              value: '[site:url]'
+          service_title:
+            source_id: token
+            source:
+              value: '[site:name]'
+          logo_text:
+            source_id: textfield
+            source:
+              value: ''
+          operator_logo_alt:
+            source_id: token
+            source:
+              value: '[site:name]'
+          bottom_display:
+            source_id: checkbox
+            source:
+              value: '1'
+        slots:
+          top_menus:
+            sources:
+              -
+                source_id: component
+                source:
+                  component:
+                    component_id: 'ui_suite_dsfr_components:footer_menu'
+                    variant_id: null
+                    props:
+                      attributes:
+                        source_id: attributes
+                        source:
+                          value: ''
+                      title:
+                        source_id: textfield
+                        source:
+                          value: 'Footer menu first'
+                      links:
+                        source_id: menu
+                        source:
+                          menu: footer-menu-first
+                          level: '1'
+                          depth: '1'
+                      total_menus:
+                        source_id: number
+                        source:
+                          value: '4'
+                    slots: {  }
+                    third_party_settings: ''
+                    node_id: ''
+                node_id: 2d28a51ab686eec3
+              -
+                source_id: component
+                source:
+                  component:
+                    component_id: 'ui_suite_dsfr_components:footer_menu'
+                    variant_id: null
+                    props:
+                      attributes:
+                        source_id: attributes
+                        source:
+                          value: ''
+                      title:
+                        source_id: textfield
+                        source:
+                          value: 'Footer menu second'
+                      links:
+                        source_id: menu
+                        source:
+                          menu: footer-menu-second
+                          level: '1'
+                          depth: '1'
+                      total_menus:
+                        source_id: number
+                        source:
+                          value: '4'
+                    slots: {  }
+                    third_party_settings: ''
+                    node_id: ''
+                node_id: c41b6da95c67020b
+              -
+                source_id: component
+                source:
+                  component:
+                    component_id: 'ui_suite_dsfr_components:footer_menu'
+                    variant_id: null
+                    props:
+                      attributes:
+                        source_id: attributes
+                        source:
+                          value: ''
+                      title:
+                        source_id: textfield
+                        source:
+                          value: 'Footer menu third'
+                      links:
+                        source_id: menu
+                        source:
+                          menu: footer-menu-third
+                          level: '1'
+                          depth: '1'
+                      total_menus:
+                        source_id: number
+                        source:
+                          value: '4'
+                    slots: {  }
+                    third_party_settings: ''
+                    node_id: ''
+                node_id: 11185ba0525778bd
+              -
+                source_id: component
+                source:
+                  component:
+                    component_id: 'ui_suite_dsfr_components:footer_menu'
+                    variant_id: null
+                    props:
+                      attributes:
+                        source_id: attributes
+                        source:
+                          value: ''
+                      title:
+                        source_id: textfield
+                        source:
+                          value: 'Footer menu fourth'
+                      links:
+                        source_id: menu
+                        source:
+                          menu: footer-menu-fourth
+                          level: '1'
+                          depth: '1'
+                    slots: {  }
+                    third_party_settings: ''
+                    node_id: ''
+                node_id: 1b9b127fdc38e2eb
+          content_desc:
+            sources:
+              -
+                node_id: 6943deb3164fb
+                source_id: textfield
+                source:
+                  value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Lorem ipsum dolor sit amet, consectetur adipiscin'
+          bottom_copy:
+            sources:
+              -
+                node_id: 6943e18e89550
+                source_id: textfield
+                source:
+                  value: 'Sauf mention explicite de propriété intellectuelle détenue par des tiers, les contenus de ce site sont proposés sous '
+              -
+                node_id: 6943e1a9ed47b
+                source_id: component
+                source:
+                  component:
+                    component_id: 'display_builder:link'
+                    variant_id: null
+                    props:
+                      url:
+                        source_id: url
+                        source:
+                          value: 'https://github.com/etalab/licence-ouverte/blob/master/LO.md'
+                    slots:
+                      content:
+                        sources:
+                          -
+                            node_id: 6943e236a0a87
+                            source_id: component
+                            source:
+                              component:
+                                component_id: 'display_builder:inline'
+                                variant_id: null
+                                props:
+                                  tag:
+                                    source_id: select
+                                    source:
+                                      value: u
+                                  content:
+                                    source_id: textfield
+                                    source:
+                                      value: 'licence etalab-2.0 '
+                                slots: {  }
+                          -
+                            node_id: 6943e1f41b7b2
+                            source_id: icon_renderable
+                            source:
+                              value:
+                                target_id: 'dsfr:external-link-line'
+                                settings:
+                                  dsfr:
+                                    size: xs
+                                    color: ''
+                                    alt: ''
+                                icon_id: 'dsfr:external-link-line'
+                                icon_settings:
+                                  dsfr:
+                                    size: xs
+                                    color: ''
+                                    alt: ''
+                              saved_values:
+                                size: xs
+                                color: ''
+                                alt: ''
+                            third_party_settings:
+                              styles:
+                                selected: {  }
+                                extra: ''
+          partners:
+            sources: {  }
+          operator_logo:
+            sources:
+              -
+                source_id: block
+                source:
+                  plugin_id: system_branding_block
+                  system_branding_block:
+                    id: system_branding_block
+                    label: 'Site branding'
+                    label_display: ''
+                    provider: system
+                    use_site_logo: true
+                    use_site_name: false
+                    use_site_slogan: false
+                node_id: 8cb829a302e2bfd1
+          bottom_menu:
+            sources: {  }
+          menu_top:
+            sources: {  }
+        third_party_settings: ''
+        node_id: ''
+    node_id: 6fdba65486a2ebab
+    third_party_settings:
+      styles:
+        selected:
+          spacing_margin_top: fr-mt-5w
+          spacing_padding_bottom: fr-pb-5w
+        extra: ''
+  -
+    node_id: 694162b8bf9e0
+    source_id: component
+    source:
+      component:
+        component_id: 'ui_suite_dsfr_components:display_modal'
+        slots:
+          title:
+            sources:
+              -
+                node_id: '6941560003600'
+                source_id: textfield
+                source:
+                  value: 'Paramètres d’affichage'
+          description:
+            sources:
+              -
+                node_id: 694156020ab02
+                source_id: textfield
+                source:
+                  value: 'Choisissez un thème pour personnaliser l’apparence du site.'

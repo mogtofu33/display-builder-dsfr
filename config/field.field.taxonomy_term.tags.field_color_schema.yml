@@ -1,0 +1,20 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_color_schema
+    - taxonomy.vocabulary.tags
+  module:
+    - options
+id: taxonomy_term.tags.field_color_schema
+field_name: field_color_schema
+entity_type: taxonomy_term
+bundle: tags
+label: 'Color schema'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

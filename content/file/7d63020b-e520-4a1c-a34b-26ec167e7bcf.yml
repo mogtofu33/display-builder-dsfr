@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 7d63020b-e520-4a1c-a34b-26ec167e7bcf
+  default_langcode: fr
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: ordinateur.jpg
+  uri:
+    -
+      value: 'public://images/ordinateur.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 76118
+  status:
+    -
+      value: true

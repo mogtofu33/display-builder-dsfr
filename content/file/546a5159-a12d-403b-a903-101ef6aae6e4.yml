@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 546a5159-a12d-403b-a903-101ef6aae6e4
+  default_langcode: fr
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: policier_frontieres.jpg
+  uri:
+    -
+      value: 'public://images/policier_frontieres.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 203128
+  status:
+    -
+      value: true

@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 1ab527f2-e82d-41d2-b7f2-ba6264dc754b
+  bundle: tags
+  default_langcode: fr
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Énergie
+  weight:
+    -
+      value: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /tags/energie
+      langcode: fr
+  field_color_schema:
+    -
+      value: brown-cafe-creme
+  field_icon:
+    -
+      target_id: 'dsfr:battery-charge-line'

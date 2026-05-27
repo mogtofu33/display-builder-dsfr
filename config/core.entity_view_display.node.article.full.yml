@@ -1,0 +1,575 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - core.entity_view_mode.node.full
+    - field.field.node.article.body
+    - field.field.node.article.comment
+    - field.field.node.article.field_image
+    - field.field.node.article.field_pictogramme
+    - field.field.node.article.field_tags
+    - image.style.wide
+    - node.type.article
+    - views.view.articles
+  module:
+    - comment
+    - display_builder
+    - image
+    - text
+    - ui_icons_field
+    - ui_patterns
+    - ui_patterns_field_formatters
+    - ui_suite_dsfr_components
+    - user
+    - views
+  theme:
+    - ui_suite_dsfr
+third_party_settings:
+  display_builder:
+    profile: advanced
+    sources:
+      -
+        source_id: entity_field
+        source:
+          derivable_context: 'field:node:article:field_image'
+          'field:node:article:field_image':
+            value:
+              sources:
+                -
+                  source_id: 'field_formatter:node:article:field_image'
+                  source:
+                    type: image
+                    label: hidden
+                    settings:
+                      image_link: ''
+                      image_style: wide
+                      image_loading:
+                        attribute: eager
+                    third_party_settings: {  }
+                    weight: -1
+                    region: content
+        node_id: ea2737c9a46db3a9
+        third_party_settings:
+          styles:
+            selected:
+              img_responsive: 'fr-responsive-img fr-ratio-32x9'
+            extra: ''
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_dsfr_components:container'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_type:
+                source_id: select
+                source:
+                  value: container
+              grid_row:
+                source_id: checkbox
+                source:
+                  value: '1'
+              with_gutters:
+                source_id: checkbox
+                source:
+                  value: 0
+            slots:
+              content:
+                sources:
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'display_builder:section'
+                        slots:
+                          content:
+                            sources:
+                              -
+                                source_id: icon_renderable
+                                source:
+                                  value:
+                                    target_id: 'dsfr:calendar-line'
+                                    settings:
+                                      dsfr:
+                                        size: xs
+                                        color: ''
+                                        alt: ''
+                                        class: ''
+                                    icon_id: 'dsfr:calendar-line'
+                                    icon_settings:
+                                      dsfr:
+                                        size: xs
+                                        color: ''
+                                        alt: ''
+                                        class: ''
+                                  saved_values:
+                                    size: xs
+                                    color: ''
+                                    alt: ''
+                                    class: ''
+                                node_id: 2ab0eb89c17369eb
+                              -
+                                source_id: component
+                                source:
+                                  component:
+                                    component_id: 'display_builder:inline'
+                                    variant_id: null
+                                    props:
+                                      attributes:
+                                        source_id: attributes
+                                        source:
+                                          value: ''
+                                      tag:
+                                        source_id: select
+                                        source:
+                                          value: span
+                                      content:
+                                        source_id: textfield
+                                        source:
+                                          value: 'Publié le'
+                                    slots: {  }
+                                    third_party_settings: ''
+                                    node_id: ''
+                                node_id: 84614b8edc25b43b
+                                third_party_settings:
+                                  styles:
+                                    selected: {  }
+                                    extra: ''
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:node:article:created'
+                                  'field:node:article:created':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:node:article:created'
+                                          source:
+                                            type: timestamp
+                                            settings:
+                                              time_diff:
+                                                future_format: '@interval hence'
+                                                past_format: '@interval ago'
+                                                granularity: '2'
+                                                refresh: '60'
+                                                enabled: 0
+                                                description: ''
+                                              date_format: custom
+                                              custom_date_format: 'j M Y, '
+                                              timezone: ''
+                                              tooltip:
+                                                date_format: long
+                                                custom_date_format: ''
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: 93310be669e4f7a5
+                                third_party_settings:
+                                  styles:
+                                    selected: {  }
+                                    extra: ''
+                              -
+                                source_id: component
+                                source:
+                                  component:
+                                    component_id: 'display_builder:inline'
+                                    variant_id: null
+                                    props:
+                                      attributes:
+                                        source_id: attributes
+                                        source:
+                                          value: ''
+                                      tag:
+                                        source_id: select
+                                        source:
+                                          value: span
+                                      content:
+                                        source_id: textfield
+                                        source:
+                                          value: 'modifié le'
+                                    slots: {  }
+                                    third_party_settings: ''
+                                    node_id: ''
+                                node_id: db873a17db52e46c
+                                third_party_settings:
+                                  styles:
+                                    selected: {  }
+                                    extra: ''
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:node:article:changed'
+                                  'field:node:article:changed':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:node:article:changed'
+                                          source:
+                                            type: timestamp
+                                            settings:
+                                              time_diff:
+                                                future_format: '@interval hence'
+                                                past_format: '@interval ago'
+                                                granularity: '2'
+                                                refresh: '60'
+                                                enabled: 0
+                                                description: ''
+                                              date_format: custom
+                                              custom_date_format: 'j M Y'
+                                              timezone: ''
+                                              tooltip:
+                                                date_format: long
+                                                custom_date_format: ''
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: e39614b11b9ca9bf
+                                third_party_settings:
+                                  styles:
+                                    selected: {  }
+                                    extra: ''
+                    node_id: e96958866e91f50a
+                    third_party_settings:
+                      styles:
+                        selected:
+                          typography: fr-text--sm
+                          text_color: fr-text-mention--grey
+                          spacing_margin_top: fr-mt-2w
+                        extra: ''
+            third_party_settings: ''
+            node_id: ''
+        node_id: efa3ba3009eb54a4
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_dsfr:grid_row_2'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_type:
+                source_id: select
+                source:
+                  value: container
+              with_gutters:
+                source_id: checkbox
+                source:
+                  value: '1'
+              horizontal_align:
+                source_id: select
+                source:
+                  value: ''
+              vertical_align:
+                source_id: select
+                source:
+                  value: ''
+              cols:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              cols_sm:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              cols_md:
+                source_id: selects
+                source:
+                  value:
+                    - '9'
+                    - '3'
+              cols_lg:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              cols_xl:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              offset:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              offset_sm:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              offset_md:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              offset_lg:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              offset_xl:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              col_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              first_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              second_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+            slots:
+              second:
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:article:uid'
+                      'field:node:article:uid':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:article:uid'
+                              source:
+                                type: entity_reference_entity_view
+                                settings:
+                                  view_mode: author
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: b263134042d90527
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'display_builder:inline'
+                        variant_id: null
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          tag:
+                            source_id: select
+                            source:
+                              value: h6
+                          content:
+                            source_id: textfield
+                            source:
+                              value: 'Sur le même thème'
+                        slots: {  }
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: 98ca90b7640edac6
+                    third_party_settings:
+                      styles:
+                        selected:
+                          typography: fr-text--md
+                          spacing_padding_top: fr-pt-2w
+                          border_border: fr-border-top
+                          border_color: fr-border-default--grey
+                          border_width: fr-border-width-0-5v
+                        extra: ''
+                  -
+                    source_id: block
+                    source:
+                      plugin_id: 'views_block:articles-block_1'
+                      'views_block:articles-block_1':
+                        id: 'views_block:articles-block_1'
+                        label: ''
+                        label_display: ''
+                        provider: views
+                        views_label: ''
+                        items_per_page: null
+                    node_id: c972ec658e8ffbf8
+              first:
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:article:body'
+                      'field:node:article:body':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:article:body'
+                              source:
+                                type: text_default
+                                label: hidden
+                                settings: {  }
+                                third_party_settings: {  }
+                                weight: 0
+                                region: content
+                    node_id: dd91aa2855da8cc7
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_dsfr:tag_group'
+                        slots:
+                          tags:
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:node:article:field_tags'
+                                  'field:node:article:field_tags':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:node:article:field_tags'
+                                          source:
+                                            type: entity_reference_entity_view
+                                            settings:
+                                              view_mode: tag_link
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: a86664ee95a13fe9
+                    node_id: 665bb179fc28cd78
+            third_party_settings: ''
+            node_id: ''
+        node_id: b388d7c88c553327
+        third_party_settings:
+          styles:
+            selected:
+              spacing_margin_top: fr-mt-1v
+              spacing_margin_bottom: fr-mb-5w
+              spacing_padding_top: fr-pt-1v
+              spacing_padding_bottom: fr-pb-5w
+              border_border: fr-border-top
+              border_color: fr-border-default--grey
+              border_width: fr-border-width-0-5v
+            extra: ''
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_dsfr_components:container'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_type:
+                source_id: select
+                source:
+                  value: container
+              grid_row:
+                source_id: checkbox
+                source:
+                  value: 0
+              with_gutters:
+                source_id: checkbox
+                source:
+                  value: 0
+            slots:
+              content:
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:article:comment'
+                      'field:node:article:comment':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:article:comment'
+                              source:
+                                type: comment_default
+                                label: above
+                                settings:
+                                  view_mode: default
+                                  pager_id: 0
+                                third_party_settings: {  }
+                                weight: 110
+                                region: content
+                    node_id: 8d3409664d361f3f
+            third_party_settings: ''
+            node_id: ''
+        node_id: 5982ca0dad97b07c
+id: node.article.full
+targetEntityType: node
+bundle: article
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  comment:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: wide
+      image_loading:
+        attribute: eager
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  field_pictogramme:
+    type: icon_formatter
+    label: above
+    settings:
+      icon_settings: {  }
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

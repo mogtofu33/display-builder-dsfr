@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f346c3c7-1896-4e4c-8c00-67560c4dbf3e
+  default_langcode: fr
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: electrique_voiture.jpg
+  uri:
+    -
+      value: 'public://images/electrique_voiture.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 182983
+  status:
+    -
+      value: true

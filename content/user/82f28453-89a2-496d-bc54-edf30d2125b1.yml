@@ -1,0 +1,54 @@
+_meta:
+  version: '1.0'
+  entity_type: user
+  uuid: 82f28453-89a2-496d-bc54-edf30d2125b1
+  default_langcode: fr
+  depends:
+    bf7465e5-0e89-4b26-95f8-647f41aa48a5: file
+default:
+  preferred_langcode:
+    -
+      value: fr
+  preferred_admin_langcode:
+    -
+      value: fr
+  name:
+    -
+      value: 'Auteur exemple'
+  pass:
+    -
+      value: $2y$12$BzhgZdb0NFK7Xi5etT8PIuoNexvEgZfxFbt2lH0iwHysvL3xPa7FO
+      pre_hashed: true
+      existing: null
+  mail:
+    -
+      value: user@example.io
+  timezone:
+    -
+      value: Europe/Paris
+  status:
+    -
+      value: true
+  access:
+    -
+      value: 0
+  login:
+    -
+      value: 0
+  init:
+    -
+      value: user@example.io
+  roles:
+    -
+      target_id: content_editor
+  path:
+    -
+      langcode: fr
+      alias: null
+  user_picture:
+    -
+      alt: ''
+      title: ''
+      width: 860
+      height: 692
+      entity: bf7465e5-0e89-4b26-95f8-647f41aa48a5

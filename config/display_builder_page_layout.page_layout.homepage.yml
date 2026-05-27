@@ -1,0 +1,1132 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - display_builder.profile.default
+    - system.menu.footer
+    - system.menu.footer-bottom
+    - system.menu.footer-menu-1
+    - system.menu.footer-menu-2
+    - system.menu.footer-menu-3
+    - system.menu.footer-menu-4
+    - system.menu.footer-menu-5
+    - system.menu.footer-menu-6
+    - system.menu.main
+    - system.menu.quick-access
+  module:
+    - display_builder
+    - search
+    - system
+    - token
+    - ui_patterns
+    - ui_suite_dsfr_components
+  theme:
+    - ui_suite_dsfr
+id: homepage
+label: Homepage
+weight: -10
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
+profile: default
+sources:
+  -
+    node_id: 694120ef9b2f9
+    source_id: component
+    source:
+      component:
+        component_id: 'ui_suite_dsfr_components:header'
+        variant_id: null
+        props:
+          attributes:
+            source_id: attributes
+            source:
+              value: ''
+          id:
+            source_id: textfield
+            source:
+              value: ''
+          logo_text:
+            source_id: textfield
+            source:
+              value: 'Intitulé Officiel'
+          service_title:
+            source_id: token
+            source:
+              value: '[site:name]'
+          service_tagline:
+            source_id: token
+            source:
+              value: '[site:slogan]'
+          home_url:
+            source_id: token
+            source:
+              value: '[site:url]'
+          home_text:
+            source_id: textfield
+            source:
+              value: "Retour à l'accueil du site"
+          link_title:
+            source_id: token
+            source:
+              value: '[site:name]'
+          tools:
+            source_id: menu
+            source:
+              menu: quick-access
+              level: '1'
+              depth: '1'
+          navbar:
+            source_id: menu
+            source:
+              menu: main
+              level: '1'
+              depth: '3'
+          is_mega_menu:
+            source_id: checkbox
+            source:
+              value: '1'
+        slots:
+          operator_logo:
+            sources:
+              -
+                source_id: block
+                source:
+                  plugin_id: system_branding_block
+                  system_branding_block:
+                    id: system_branding_block
+                    label: 'Site branding'
+                    label_display: ''
+                    provider: system
+                    use_site_logo: true
+                    use_site_name: false
+                    use_site_slogan: false
+                node_id: a3e7f53dc62f9d95
+          tools_search:
+            sources:
+              -
+                node_id: 69412016bb773
+                source_id: block
+                source:
+                  plugin_id: search_form_block
+          tools_links:
+            sources:
+              -
+                node_id: 694162b1b7e6e
+                source_id: component
+                source:
+                  component:
+                    component_id: 'ui_suite_dsfr_components:display_button'
+                    variant_id:
+                      source_id: select
+                      source:
+                        value: default
+                    props:
+                      attributes:
+                        source_id: attributes
+                        source:
+                          value: ''
+                    slots:
+                      label:
+                        sources:
+                          -
+                            node_id: 69411d94b3278
+                            source_id: textfield
+                            source:
+                              value: "Paramètres d'affichage"
+                    third_party_settings: ''
+                    node_id: ''
+        third_party_settings: ''
+        node_id: ''
+    third_party_settings:
+      styles:
+        selected:
+          spacing_margin_bottom: fr-mb-1v
+        extra: ''
+  -
+    source_id: component
+    source:
+      component:
+        component_id: 'ui_suite_dsfr:grid_row_1'
+        variant_id: null
+        props:
+          attributes:
+            source_id: attributes
+            source:
+              value: ''
+          container_type:
+            source_id: select
+            source:
+              value: container
+          with_gutters:
+            source_id: checkbox
+            source:
+              value: 0
+          horizontal_align:
+            source_id: select
+            source:
+              value: ''
+          vertical_align:
+            source_id: select
+            source:
+              value: ''
+          col:
+            source_id: select
+            source:
+              value: ''
+          col_sm:
+            source_id: select
+            source:
+              value: ''
+          col_md:
+            source_id: select
+            source:
+              value: ''
+          col_lg:
+            source_id: select
+            source:
+              value: ''
+          col_xl:
+            source_id: select
+            source:
+              value: ''
+          offset:
+            source_id: select
+            source:
+              value: ''
+          offset_sm:
+            source_id: select
+            source:
+              value: ''
+          offset_md:
+            source_id: select
+            source:
+              value: ''
+          offset_lg:
+            source_id: select
+            source:
+              value: ''
+          offset_xl:
+            source_id: select
+            source:
+              value: ''
+          container_attributes:
+            source_id: attributes
+            source:
+              value: ''
+          col_attributes:
+            source_id: attributes
+            source:
+              value: ''
+        slots:
+          content:
+            sources:
+              -
+                source_id: block
+                source:
+                  plugin_id: system_messages_block
+                node_id: 990ede3434d34bb3
+              -
+                source_id: page_title
+                source: {  }
+                node_id: 68dcc6c779621
+                third_party_settings:
+                  styles:
+                    selected:
+                      spacing_margin_top: fr-mt-2w
+                      spacing_margin_bottom: fr-mb-2w
+                      visually_hidden: fr-hidden
+                    extra: ''
+        third_party_settings: ''
+        node_id: ''
+    node_id: 80b60e8d2c6af53f
+  -
+    source_id: component
+    source:
+      component:
+        component_id: 'ui_suite_dsfr_components:container'
+        variant_id: null
+        props:
+          attributes:
+            source_id: attributes
+            source:
+              value: ''
+          container_type:
+            source_id: select
+            source:
+              value: fluid
+          grid_row:
+            source_id: checkbox
+            source:
+              value: 0
+        slots:
+          content:
+            sources:
+              -
+                source_id: main_page_content
+                source: {  }
+                node_id: 68dcc6c779627
+        third_party_settings: ''
+        node_id: ''
+    node_id: 6868d3911e680e68
+    third_party_settings:
+      styles:
+        selected:
+          spacing_margin_top: fr-mt-5w
+        extra: ''
+  -
+    node_id: 68dcc9e752ed0
+    source_id: component
+    source:
+      component:
+        component_id: 'ui_suite_dsfr:follow'
+        variant_id: null
+        props:
+          attributes:
+            source_id: attributes
+            source:
+              value: ''
+          title_tag:
+            source_id: select
+            source:
+              value: ''
+          follow_title_tag:
+            source_id: select
+            source:
+              value: ''
+        slots:
+          newsletter_title:
+            sources:
+              -
+                node_id: 6943e2a79afbb
+                source_id: textfield
+                source:
+                  value: "Abonnez-vous à nos lettres d'information"
+          newsletter_body:
+            sources:
+              -
+                node_id: 6943e2aab09eb
+                source_id: textfield
+                source:
+                  value: 'Recevez régulièrement nos actualités directement dans votre boîte de réception.'
+          newsletter:
+            sources:
+              -
+                node_id: 6943e2b2500db
+                source_id: component
+                source:
+                  component:
+                    component_id: 'ui_suite_dsfr:button'
+                    props:
+                      icon_position:
+                        source_id: select
+                        source:
+                          value: left
+                      icon:
+                        source_id: icon
+                        source:
+                          value:
+                            target_id: 'dsfr:mail-line'
+                            settings:
+                              dsfr:
+                                size: md
+                                color: ''
+                                alt: ''
+                            icon_id: 'dsfr:mail-line'
+                            icon_settings:
+                              dsfr:
+                                size: md
+                                color: ''
+                                alt: ''
+                    slots:
+                      label:
+                        add_more_button: null
+                        sources:
+                          -
+                            node_id: 6943e311c5ff3
+                            source_id: textfield
+                            source:
+                              value: "S'abonner"
+                  saved_values: {  }
+          social_title:
+            sources:
+              -
+                node_id: 6943e2b9958e2
+                source_id: textfield
+                source:
+                  value: 'Suivez nous'
+          social:
+            sources:
+              -
+                node_id: 6943fa1f10f56
+                source_id: component
+                source:
+                  component:
+                    component_id: 'ui_suite_dsfr_components:social'
+                    variant_id: null
+                    props:
+                      icon:
+                        source_id: icon
+                        source:
+                          value:
+                            target_id: 'dsfr:threads-fill'
+                            settings:
+                              dsfr:
+                                size: md
+                                color: action-high--blue-france
+                                alt: ''
+                            icon_id: 'dsfr:threads-fill'
+                            icon_settings:
+                              dsfr:
+                                size: md
+                                color: action-high--blue-france
+                                alt: ''
+                      url:
+                        source_id: url
+                        source:
+                          value: 'https://www.threads.net/@MY_ACCOUNT'
+                      title:
+                        source_id: textfield
+                        source:
+                          value: 'Suivez-nous sur Threads - Ouverture dans une nouvelle fenêtre'
+                    slots:
+                      label:
+                        add_more_button: null
+                  saved_values: {  }
+              -
+                node_id: 6943f8b46803f
+                source_id: component
+                source:
+                  component:
+                    component_id: 'ui_suite_dsfr_components:social'
+                    variant_id: null
+                    props:
+                      icon:
+                        source_id: icon
+                        source:
+                          value:
+                            target_id: 'dsfr:twitter-x-line'
+                            settings:
+                              dsfr:
+                                size: md
+                                color: action-high--blue-france
+                                alt: ''
+                            icon_id: 'dsfr:twitter-x-line'
+                            icon_settings:
+                              dsfr:
+                                size: md
+                                color: action-high--blue-france
+                                alt: ''
+                      url:
+                        source_id: url
+                        source:
+                          value: 'https://twitter.com/MY_ACCOUNT'
+                      title:
+                        source_id: textfield
+                        source:
+                          value: 'Suivez-nous sur X (anciennement Twitter) - Ouverture dans une nouvelle fenêtre'
+                    slots:
+                      label:
+                        add_more_button: null
+                  saved_values: {  }
+              -
+                node_id: 6943e6cba874a
+                source_id: component
+                source:
+                  component:
+                    component_id: 'ui_suite_dsfr_components:social'
+                    variant_id: null
+                    props:
+                      icon:
+                        source_id: icon
+                        source:
+                          value:
+                            target_id: 'dsfr:facebook-circle-fill'
+                            settings:
+                              dsfr:
+                                size: md
+                                color: action-high--blue-france
+                                alt: ''
+                            icon_id: 'dsfr:facebook-circle-fill'
+                            icon_settings:
+                              dsfr:
+                                size: md
+                                color: action-high--blue-france
+                                alt: ''
+                      url:
+                        source_id: url
+                        source:
+                          value: 'https://facebook.com/MY_ACCOUNT'
+                      title:
+                        source_id: textfield
+                        source:
+                          value: 'Suivez-nous sur Facebook - Ouverture dans une nouvelle fenêtre'
+                    slots:
+                      label:
+                        add_more_button: null
+                  saved_values: {  }
+              -
+                node_id: 6943ea45509fe
+                source_id: component
+                source:
+                  component:
+                    component_id: 'ui_suite_dsfr_components:social'
+                    variant_id: null
+                    props:
+                      icon:
+                        source_id: icon
+                        source:
+                          value:
+                            target_id: 'dsfr:linkedin-box-fill'
+                            settings:
+                              dsfr:
+                                size: md
+                                color: action-high--blue-france
+                                alt: ''
+                            icon_id: 'dsfr:linkedin-box-fill'
+                            icon_settings:
+                              dsfr:
+                                size: md
+                                color: action-high--blue-france
+                                alt: ''
+                      url:
+                        source_id: url
+                        source:
+                          value: 'https://twitter.com/MY_ACCOUNT'
+                      title:
+                        source_id: textfield
+                        source:
+                          value: 'Suivez-nous sur Linkedin - Ouverture dans une nouvelle fenêtre'
+                    slots:
+                      label:
+                        add_more_button: null
+                  saved_values: {  }
+              -
+                node_id: 6943f8abda363
+                source_id: component
+                source:
+                  component:
+                    component_id: 'ui_suite_dsfr_components:social'
+                    variant_id: null
+                    props:
+                      icon:
+                        source_id: icon
+                        source:
+                          value:
+                            target_id: 'dsfr:instagram-fill'
+                            settings:
+                              dsfr:
+                                size: md
+                                color: action-high--blue-france
+                                alt: ''
+                            icon_id: 'dsfr:instagram-fill'
+                            icon_settings:
+                              dsfr:
+                                size: md
+                                color: action-high--blue-france
+                                alt: ''
+                      url:
+                        source_id: url
+                        source:
+                          value: 'https://instagram.com/MY_ACCOUNT'
+                      title:
+                        source_id: textfield
+                        source:
+                          value: 'Suivez-nous sur Instagram - Ouverture dans une nouvelle fenêtre'
+                    slots:
+                      label:
+                        add_more_button: null
+                  saved_values: {  }
+              -
+                node_id: 6943fa28c60c9
+                source_id: component
+                source:
+                  component:
+                    component_id: 'ui_suite_dsfr_components:social'
+                    variant_id: null
+                    props:
+                      icon:
+                        source_id: icon
+                        source:
+                          value:
+                            target_id: 'dsfr:whatsapp-fill'
+                            settings:
+                              dsfr:
+                                size: md
+                                color: ''
+                                alt: ''
+                            icon_id: 'dsfr:whatsapp-fill'
+                            icon_settings:
+                              dsfr:
+                                size: md
+                                color: ''
+                                alt: ''
+                      url:
+                        source_id: url
+                        source:
+                          value: 'https://www.whatsapp.com/channel/MY_ACCOUNT'
+                      title:
+                        source_id: textfield
+                        source:
+                          value: 'Suivez-nous sur Whatsapp - Ouverture dans une nouvelle fenêtre'
+                    slots:
+                      label:
+                        add_more_button: null
+                  saved_values: {  }
+              -
+                node_id: 6943f8b019fb0
+                source_id: component
+                source:
+                  component:
+                    component_id: 'ui_suite_dsfr_components:social'
+                    variant_id: null
+                    props:
+                      icon:
+                        source_id: icon
+                        source:
+                          value:
+                            target_id: 'dsfr:youtube-fill'
+                            settings:
+                              dsfr:
+                                size: md
+                                color: action-high--blue-france
+                                alt: ''
+                            icon_id: 'dsfr:youtube-fill'
+                            icon_settings:
+                              dsfr:
+                                size: md
+                                color: action-high--blue-france
+                                alt: ''
+                      url:
+                        source_id: url
+                        source:
+                          value: 'https://www.youtube.com/@MY_ACCOUNT/featured'
+                      title:
+                        source_id: textfield
+                        source:
+                          value: 'Suivez-nous sur Youtube - Ouverture dans une nouvelle fenêtre'
+                    slots:
+                      label:
+                        add_more_button: null
+                  saved_values: {  }
+              -
+                source_id: component
+                source:
+                  component:
+                    component_id: 'ui_suite_dsfr_components:social'
+                    variant_id: null
+                    props:
+                      attributes:
+                        source_id: attributes
+                        source:
+                          value: ''
+                      icon:
+                        source_id: icon
+                        source:
+                          value:
+                            target_id: 'dsfr:rss-line'
+                            settings:
+                              dsfr:
+                                size: md
+                                color: ''
+                                alt: ''
+                            icon_id: 'dsfr:rss-line'
+                            icon_settings:
+                              dsfr:
+                                size: md
+                                color: ''
+                                alt: ''
+                      url:
+                        source_id: token
+                        source:
+                          value: '[site:url]/rss.xml'
+                      title:
+                        source_id: textfield
+                        source:
+                          value: 'Suivre notre flux.'
+                    slots: {  }
+                    third_party_settings: ''
+                    node_id: ''
+                  saved_values: {  }
+                node_id: ec00d1418513e4a0
+        third_party_settings: ''
+        node_id: ''
+    third_party_settings:
+      styles:
+        selected:
+          spacing_margin_top: fr-mt-5w
+          spacing_padding_top: fr-pt-5w
+          border_border: fr-border-top
+          border_color: fr-border-default--grey
+          border_width: fr-border-width-0-5v
+        extra: ''
+  -
+    source_id: component
+    source:
+      component:
+        component_id: 'ui_suite_dsfr_components:footer'
+        variant_id: null
+        props:
+          attributes:
+            source_id: attributes
+            source:
+              value: ''
+          menu_top_count:
+            source_id: number
+            source:
+              value: '6'
+          menu_content:
+            source_id: menu
+            source:
+              menu: footer
+              level: '1'
+              depth: '1'
+          menu_bottom:
+            source_id: menu
+            source:
+              menu: footer-bottom
+              level: '1'
+              depth: '1'
+          home_url:
+            source_id: token
+            source:
+              value: '[site:url]'
+          service_title:
+            source_id: token
+            source:
+              value: '[site:name]'
+          logo_text:
+            source_id: textfield
+            source:
+              value: ''
+          operator_logo_alt:
+            source_id: token
+            source:
+              value: '[site:name]'
+          bottom_display:
+            source_id: checkbox
+            source:
+              value: '1'
+        slots:
+          top_menus:
+            sources:
+              -
+                source_id: component
+                source:
+                  component:
+                    component_id: 'ui_suite_dsfr_components:footer_menu'
+                    variant_id: null
+                    props:
+                      attributes:
+                        source_id: attributes
+                        source:
+                          value: ''
+                      title:
+                        source_id: textfield
+                        source:
+                          value: 'Nom de la catégorie 1'
+                      links:
+                        source_id: menu
+                        source:
+                          menu: footer-menu-1
+                          level: '1'
+                          depth: '1'
+                    slots: {  }
+                node_id: 2d28a51ab686eec3
+              -
+                source_id: component
+                source:
+                  component:
+                    component_id: 'ui_suite_dsfr_components:footer_menu'
+                    variant_id: null
+                    props:
+                      attributes:
+                        source_id: attributes
+                        source:
+                          value: ''
+                      title:
+                        source_id: textfield
+                        source:
+                          value: 'Nom de la catégorie 2'
+                      links:
+                        source_id: menu
+                        source:
+                          menu: footer-menu-2
+                          level: '1'
+                          depth: '1'
+                    slots: {  }
+                node_id: c41b6da95c67020b
+              -
+                source_id: component
+                source:
+                  component:
+                    component_id: 'ui_suite_dsfr_components:footer_menu'
+                    variant_id: null
+                    props:
+                      attributes:
+                        source_id: attributes
+                        source:
+                          value: ''
+                      title:
+                        source_id: textfield
+                        source:
+                          value: 'Nom de la catégorie 3'
+                      links:
+                        source_id: menu
+                        source:
+                          menu: footer-menu-3
+                          level: '1'
+                          depth: '1'
+                    slots: {  }
+                node_id: 11185ba0525778bd
+              -
+                source_id: component
+                source:
+                  component:
+                    component_id: 'ui_suite_dsfr_components:footer_menu'
+                    variant_id: null
+                    props:
+                      attributes:
+                        source_id: attributes
+                        source:
+                          value: ''
+                      title:
+                        source_id: textfield
+                        source:
+                          value: 'Nom de la catégorie 4'
+                      links:
+                        source_id: menu
+                        source:
+                          menu: footer-menu-4
+                          level: '1'
+                          depth: '1'
+                    slots: {  }
+                node_id: 1b9b127fdc38e2eb
+              -
+                source_id: component
+                source:
+                  component:
+                    component_id: 'ui_suite_dsfr_components:footer_menu'
+                    variant_id: null
+                    props:
+                      attributes:
+                        source_id: attributes
+                        source:
+                          value: ''
+                      title:
+                        source_id: textfield
+                        source:
+                          value: 'Nom de la catégorie 5'
+                      links:
+                        source_id: menu
+                        source:
+                          menu: footer-menu-5
+                          level: '1'
+                          depth: '1'
+                    slots: {  }
+                node_id: 1b9b127fdc38e2e5
+              -
+                source_id: component
+                source:
+                  component:
+                    component_id: 'ui_suite_dsfr_components:footer_menu'
+                    variant_id: null
+                    props:
+                      attributes:
+                        source_id: attributes
+                        source:
+                          value: ''
+                      title:
+                        source_id: textfield
+                        source:
+                          value: 'Nom de la catégorie 3=6'
+                      links:
+                        source_id: menu
+                        source:
+                          menu: footer-menu-6
+                          level: '1'
+                          depth: '1'
+                    slots: {  }
+                node_id: 1b9b127fdc38e2e6
+          content_desc:
+            sources:
+              -
+                node_id: 6943deb3164fb
+                source_id: textfield
+                source:
+                  value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Lorem ipsum dolor sit amet, consectetur adipiscin'
+          bottom_copy:
+            sources:
+              -
+                node_id: 6943e18e89550
+                source_id: textfield
+                source:
+                  value: 'Sauf mention explicite de propriété intellectuelle détenue par des tiers, les contenus de ce site sont proposés sous '
+              -
+                node_id: 6943e1a9ed47b
+                source_id: component
+                source:
+                  component:
+                    component_id: 'display_builder:link'
+                    variant_id: null
+                    props:
+                      url:
+                        source_id: url
+                        source:
+                          value: 'https://github.com/etalab/licence-ouverte/blob/master/LO.md'
+                    slots:
+                      content:
+                        sources:
+                          -
+                            node_id: 6943e236a0a87
+                            source_id: component
+                            source:
+                              component:
+                                component_id: 'display_builder:inline'
+                                variant_id: null
+                                props:
+                                  tag:
+                                    source_id: select
+                                    source:
+                                      value: u
+                                  content:
+                                    source_id: textfield
+                                    source:
+                                      value: 'licence etalab-2.0 '
+                                slots: {  }
+                          -
+                            node_id: 6943e1f41b7b2
+                            source_id: icon_renderable
+                            source:
+                              value:
+                                target_id: 'dsfr:external-link-line'
+                                settings:
+                                  dsfr:
+                                    size: xs
+                                    color: ''
+                                    alt: ''
+                                icon_id: 'dsfr:external-link-line'
+                                icon_settings:
+                                  dsfr:
+                                    size: xs
+                                    color: ''
+                                    alt: ''
+                              saved_values:
+                                size: xs
+                                color: ''
+                                alt: ''
+                            third_party_settings:
+                              styles:
+                                selected: {  }
+                                extra: ''
+          partners:
+            sources: {  }
+          operator_logo:
+            sources:
+              -
+                source_id: block
+                source:
+                  plugin_id: system_branding_block
+                  system_branding_block:
+                    id: system_branding_block
+                    label: 'Site branding'
+                    label_display: ''
+                    provider: system
+                    use_site_logo: true
+                    use_site_name: false
+                    use_site_slogan: false
+                node_id: 8cb829a302e2bfd1
+          bottom_menu:
+            sources: {  }
+          menu_top:
+            sources:
+              -
+                source_id: component
+                source:
+                  component:
+                    component_id: 'ui_suite_dsfr_components:footer_menu'
+                    variant_id:
+                      source_id: select
+                      source:
+                        value: default
+                    props:
+                      attributes:
+                        source_id: attributes
+                        source:
+                          value: ''
+                      title:
+                        source_id: textfield
+                        source:
+                          value: 'Nom de la catégorie 1'
+                      links:
+                        source_id: menu
+                        source:
+                          menu: footer-menu-1
+                          level: '1'
+                          depth: '1'
+                    slots: {  }
+                    node_id: 7353ce63bd49b4f5
+                node_id: 4d119e52c43346e1
+              -
+                source_id: component
+                source:
+                  component:
+                    component_id: 'ui_suite_dsfr_components:footer_menu'
+                    variant_id:
+                      source_id: select
+                      source:
+                        value: default
+                    props:
+                      attributes:
+                        source_id: attributes
+                        source:
+                          value: ''
+                      title:
+                        source_id: textfield
+                        source:
+                          value: 'Nom de la catégorie 2'
+                      links:
+                        source_id: menu
+                        source:
+                          menu: footer-menu-2
+                          level: '1'
+                          depth: '1'
+                    slots: {  }
+                    node_id: d1ea4872d234029e
+                node_id: 92064187bee47fc0
+              -
+                source_id: component
+                source:
+                  component:
+                    component_id: 'ui_suite_dsfr_components:footer_menu'
+                    variant_id:
+                      source_id: select
+                      source:
+                        value: default
+                    props:
+                      attributes:
+                        source_id: attributes
+                        source:
+                          value: ''
+                      title:
+                        source_id: textfield
+                        source:
+                          value: 'Nom de la catégorie 3'
+                      links:
+                        source_id: menu
+                        source:
+                          menu: footer-menu-3
+                          level: '1'
+                          depth: '1'
+                    slots: {  }
+                    node_id: 34b6354829bf4a81
+                node_id: 5582e23e88ff8ba4
+              -
+                source_id: component
+                source:
+                  component:
+                    component_id: 'ui_suite_dsfr_components:footer_menu'
+                    variant_id:
+                      source_id: select
+                      source:
+                        value: default
+                    props:
+                      attributes:
+                        source_id: attributes
+                        source:
+                          value: ''
+                      title:
+                        source_id: textfield
+                        source:
+                          value: 'Nom de la catégorie 4'
+                      links:
+                        source_id: menu
+                        source:
+                          menu: footer-menu-4
+                          level: '1'
+                          depth: '1'
+                    slots: {  }
+                node_id: a85e32fe512eca8c
+              -
+                source_id: component
+                source:
+                  component:
+                    component_id: 'ui_suite_dsfr_components:footer_menu'
+                    variant_id:
+                      source_id: select
+                      source:
+                        value: default
+                    props:
+                      attributes:
+                        source_id: attributes
+                        source:
+                          value: ''
+                      title:
+                        source_id: textfield
+                        source:
+                          value: 'Nom de la catégorie 5'
+                      links:
+                        source_id: menu
+                        source:
+                          menu: footer-menu-5
+                          level: '1'
+                          depth: '1'
+                    slots: {  }
+                node_id: caeb53148c58875a
+              -
+                source_id: component
+                source:
+                  component:
+                    component_id: 'ui_suite_dsfr_components:footer_menu'
+                    variant_id:
+                      source_id: select
+                      source:
+                        value: default
+                    props:
+                      attributes:
+                        source_id: attributes
+                        source:
+                          value: ''
+                      title:
+                        source_id: textfield
+                        source:
+                          value: 'Nom de la catégorie 6'
+                      links:
+                        source_id: menu
+                        source:
+                          menu: footer-menu-6
+                          level: '1'
+                          depth: '1'
+                    slots: {  }
+                node_id: fb7e07c7389c512a
+        third_party_settings: ''
+        node_id: ''
+    node_id: 6fdba65486a2ebab
+    third_party_settings:
+      styles:
+        selected:
+          spacing_padding_bottom: fr-pb-5w
+        extra: ''
+  -
+    node_id: 694162b8bf9e0
+    source_id: component
+    source:
+      component:
+        component_id: 'ui_suite_dsfr_components:display_modal'
+        slots:
+          title:
+            sources:
+              -
+                node_id: '6941560003600'
+                source_id: textfield
+                source:
+                  value: 'Paramètres d’affichage'
+          description:
+            sources:
+              -
+                node_id: 694156020ab02
+                source_id: textfield
+                source:
+                  value: 'Choisissez un thème pour personnaliser l’apparence du site.'

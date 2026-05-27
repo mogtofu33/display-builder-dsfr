@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: ef05ac17-2ba8-44fb-8a35-0ea5c8e51c5e
+  bundle: image
+  default_langcode: fr
+  depends:
+    60c2d4f9-43d7-480e-a02d-504d6ae15795: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: webapp.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: fr
+      alias: null
+  field_media_image:
+    -
+      alt: 'Web app DSFR'
+      title: ''
+      width: 1200
+      height: 675
+      entity: 60c2d4f9-43d7-480e-a02d-504d6ae15795

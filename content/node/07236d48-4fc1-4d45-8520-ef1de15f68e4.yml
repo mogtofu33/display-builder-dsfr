@@ -1,0 +1,65 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 07236d48-4fc1-4d45-8520-ef1de15f68e4
+  bundle: article
+  default_langcode: fr
+  depends:
+    82f28453-89a2-496d-bc54-edf30d2125b1: user
+    65161793-fb0f-4b54-bc8e-926a3cac5493: file
+    cdcb66d7-ea13-4e18-8f01-f62c30fe974d: taxonomy_term
+    712c258a-5aef-4887-9ecd-1078ae1b4e54: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 82f28453-89a2-496d-bc54-edf30d2125b1
+  title:
+    -
+      value: 'Promotion de l’apprentissage et de la formation professionnelle'
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /article/promotion-de-l-apprentissage-et-de-la-formation-professionnelle
+      langcode: fr
+  body:
+    -
+      value: '<p>Le Gouvernement poursuit son engagement en faveur de l’apprentissage et de la formation professionnelle afin de faciliter l’accès à l’emploi et le développement des compétences.</p><p>Des dispositifs renforcés accompagnent les jeunes, les salariés et les demandeurs d’emploi dans leurs parcours professionnels.</p><hr /><p><b>Soutien aux jeunes</b> : Un ensemble de mesures nouvelles favorise l’accès des jeunes à la qualification professionnelle. Ces initiatives combinent formation théorique et pratique en entreprise pour assurer une meilleure insertion professionnelle.</p><p>Les contrats d’apprentissage sont simplifiés et bénéficient d’aides financières accréditées. Les centres de formation travaillent en étroite collaboration avec les employeurs pour anticiper les besoins du marché du travail.</p><hr /><p><b>Formation continue pour les salariés</b> : Les dispositifs de formation continue permettent aux salariés de développer de nouvelles compétences tout au long de leur carrière. Le droit individuel à la formation est renforcé et mieux accessible à tous.</p><p>Les congés de formation et les bilans de compétences facilitent la reconversion professionnelle quand elle est nécessaire. Des partenariats publics-privés garantissent une offre de formation de qualité adaptée aux évolutions économiques.</p><p><b>Accompagnement des demandeurs d’emploi</b> : Un suivi personnalisé est proposé à chaque demandeur d’emploi pour construire un projet professionnel viable. Les formations qualifiantes sont ciblées sur les secteurs porteurs et les métiers en tension.</p>'
+      format: full_html_dsfr
+      summary: ''
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1779892603
+      last_comment_name: ''
+      last_comment_uid: 2
+      comment_count: 0
+  field_image:
+    -
+      alt: 'Formation professionnelle'
+      title: ''
+      width: 1440
+      height: 808
+      entity: 65161793-fb0f-4b54-bc8e-926a3cac5493
+  field_pictogramme:
+    -
+      target_id: 'dsfr_picto:medical-research'
+  field_tags:
+    -
+      entity: cdcb66d7-ea13-4e18-8f01-f62c30fe974d
+    -
+      entity: 712c258a-5aef-4887-9ecd-1078ae1b4e54

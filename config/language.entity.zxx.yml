@@ -1,0 +1,8 @@
+langcode: en
+status: true
+id: zxx
+label: 'Not applicable'
+direction: ltr
+# Fail with setWeight() error.
+# weight: 3
+locked: true

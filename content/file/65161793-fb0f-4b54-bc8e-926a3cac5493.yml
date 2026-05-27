@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 65161793-fb0f-4b54-bc8e-926a3cac5493
+  default_langcode: fr
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: science.jpg
+  uri:
+    -
+      value: 'public://images/science.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 97626
+  status:
+    -
+      value: true

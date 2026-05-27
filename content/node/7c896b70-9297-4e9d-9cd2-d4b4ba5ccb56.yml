@@ -1,0 +1,39 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 7c896b70-9297-4e9d-9cd2-d4b4ba5ccb56
+  bundle: page
+  default_langcode: fr
+  depends:
+    82f28453-89a2-496d-bc54-edf30d2125b1: user
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 82f28453-89a2-496d-bc54-edf30d2125b1
+  title:
+    -
+      value: 'Gestion des cookies'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /gestion-des-cookies
+      langcode: fr
+  body:
+    -
+      value: '<p>[...]</p><p>Bienvenue !</p><p>Ce site utilise des cookies pour mesurer la fréquentation du site afin d’en améliorer le fonctionnement et l’administration et, avec votre accord, pour évaluer la performance des campagnes d’informations et améliorer votre expérience utilisateur, ainsi que pour vous proposer des services interactifs fournis par nos partenaires.</p><p>Nous conservons votre choix pendant 6 mois.</p><p>Vous pouvez changer ce choix à tout moment en vous rendant sur la page Données personnelles et cookies.</p><hr /><p><b>Qu’est-ce qu’un cookie ?</b> : Un cookie est un petit fichier texte stocké sur l’appareil de l’utilisateur. Il contient des informations que le serveur peut lire pour reconnaître l’usager et améliorer son expérience.</p><p>Les cookies permettent de mémoriser les préférences de l’utilisateur, d’améliorer les services proposés et de sécuriser les transactions en ligne. Sans cookies, de nombreux services seraient beaucoup plus difficiles à utiliser.</p><hr /><p><b>Votre contrôle sur les cookies</b> : Vous avez la possibilité d’accepter ou de refuser les cookies via la bannière de consentement. Votre choix est respecté et mémorisé pour les 6 prochains mois.</p><p>Pour modifier vos préférences, un lien de gestion des cookies reste disponible en bas de page. Les cookies essentiels au fonctionnement du site ne peuvent pas être désactivés, tandis que les cookies de suivi sont optionnels.</p><p><b>Transparence et conformité</b> : Ce site est conforme au Règlement Général sur la Protection des Données (RGPD) et aux réglementations françaises. Tous les cookies utilisés sont documentés dans notre déclaration complète.</p>'
+      format: full_html_dsfr
+      summary: ''

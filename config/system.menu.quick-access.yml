@@ -1,0 +1,7 @@
+langcode: fr
+status: true
+dependencies: {  }
+id: quick-access
+label: 'Quick access'
+description: 'Top menu quick access in header.'
+locked: false

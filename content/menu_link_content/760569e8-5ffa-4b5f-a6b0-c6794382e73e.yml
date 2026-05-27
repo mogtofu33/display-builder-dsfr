@@ -1,0 +1,47 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 760569e8-5ffa-4b5f-a6b0-c6794382e73e
+  bundle: menu_link_content
+  default_langcode: fr
+  depends:
+    52ef5a2c-f934-42db-aefd-04731cc7878a: menu_link_content
+    5ce50330-977d-4d24-8cb3-233e35c33a52: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: ' Lien contenu 2'
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      title: ''
+      options:
+        attributes:
+          class:
+            - ''
+        icon: null
+        icon_display: icon_only
+      target_uuid: 5ce50330-977d-4d24-8cb3-233e35c33a52
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:52ef5a2c-f934-42db-aefd-04731cc7878a'
+  revision_translation_affected:
+    -
+      value: true

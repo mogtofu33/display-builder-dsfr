@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 99244222-ebb5-46d0-967d-d0985d42ec19
+  bundle: tags
+  default_langcode: fr
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Environnement
+  weight:
+    -
+      value: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /tags/environnement
+      langcode: fr
+  field_color_schema:
+    -
+      value: green-menthe
+  field_icon:
+    -
+      target_id: 'dsfr:leaf-line'

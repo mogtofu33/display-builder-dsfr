@@ -1,0 +1,65 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: eae301f6-16bf-447d-9b90-05be2bee4177
+  bundle: article
+  default_langcode: fr
+  depends:
+    82f28453-89a2-496d-bc54-edf30d2125b1: user
+    3a61706e-58a5-4690-813f-c187967b14d8: file
+    ea8714e5-3ef3-4c13-b3e1-0a692c0e27ec: taxonomy_term
+    8c99766c-872c-478b-9f07-5addd2f01a27: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 82f28453-89a2-496d-bc54-edf30d2125b1
+  title:
+    -
+      value: 'Plan d’amélioration de l’accueil dans les services publics'
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /article/plan-d-amelioration-de-l-accueil-dans-les-services-publics
+      langcode: fr
+  body:
+    -
+      value: '<p>Un plan d’amélioration de l’accueil des usagers est déployé dans les administrations afin de renforcer la qualité de service et la proximité avec les citoyens.</p><p>Ce programme prévoit notamment une meilleure orientation des demandes et un accompagnement personnalisé dans les démarches administratives.</p><hr /><p><b>Accueil de qualité</b> : L’objectif est de transformer l’expérience des citoyens en contact avec les services publics. Les agents d’accueil reçoivent une formation spécialisée en communication bienveillante et en résolution de problèmes.</p><p>Les temps d’attente sont réduits grâce à une meilleure organisation et à l’utilisation de technologies numériques. Les locaux d’accueil sont améliorés pour offrir un cadre accueillant et agréable.</p><hr /><p><b>Orientation et accompagnement</b> : Les usagers disposent désormais de guides clairs et simples pour naviguer dans les procédures. Des agents spécialisés les orientent vers les services appropriés dès la première interaction.</p><p>Pour les démarches complexes, un accompagnement tout au long du processus est proposé. Les points de contact unifiés réduisent la fragmentation et la confusion pour l’usager.</p><p><b>Feedback et amélioration continue</b> : Des enquêtes de satisfaction permettent de recueillir l’avis des usagers et d’identifier les points d’amélioration. Les suggestions sont régulièrement analysées et intégrées dans les évolutions du service.</p>'
+      format: full_html_dsfr
+      summary: ''
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1779892603
+      last_comment_name: ''
+      last_comment_uid: 2
+      comment_count: 0
+  field_image:
+    -
+      alt: 'Services publics'
+      title: ''
+      width: 1200
+      height: 675
+      entity: 3a61706e-58a5-4690-813f-c187967b14d8
+  field_pictogramme:
+    -
+      target_id: 'dsfr_picto:search'
+  field_tags:
+    -
+      entity: ea8714e5-3ef3-4c13-b3e1-0a692c0e27ec
+    -
+      entity: 8c99766c-872c-478b-9f07-5addd2f01a27

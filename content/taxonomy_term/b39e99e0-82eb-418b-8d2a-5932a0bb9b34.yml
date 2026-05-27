@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: b39e99e0-82eb-418b-8d2a-5932a0bb9b34
+  bundle: tags
+  default_langcode: fr
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Sécurité
+  weight:
+    -
+      value: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /tags/securite
+      langcode: fr
+  field_color_schema:
+    -
+      value: brown-caramel
+  field_icon:
+    -
+      target_id: 'dsfr:secure-payment-line'

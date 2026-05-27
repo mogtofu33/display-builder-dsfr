@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: a8632277-7f63-43af-8c51-9e0cbd24dbd5
+  bundle: tags
+  default_langcode: fr
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Inclusion numérique'
+  weight:
+    -
+      value: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /tags/inclusion-numerique
+      langcode: fr
+  field_color_schema:
+    -
+      value: pink-macaron
+  field_icon:
+    -
+      target_id: 'dsfr:compass-3-line'

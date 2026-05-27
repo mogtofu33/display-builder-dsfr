@@ -1,0 +1,129 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.tag_link
+    - field.field.taxonomy_term.tags.field_color_schema
+    - field.field.taxonomy_term.tags.field_icon
+    - taxonomy.vocabulary.tags
+  module:
+    - display_builder
+    - text
+    - ui_icons_field
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - ui_suite_dsfr
+third_party_settings:
+  display_builder:
+    profile: advanced
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_dsfr:tag'
+            variant_id:
+              source_id: select
+              source:
+                value: default
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              url:
+                source_id: entity_link
+                source:
+                  template: canonical
+                  absolute: 0
+              dismissible:
+                source_id: checkbox
+                source:
+                  value: 0
+              color_schema:
+                source_id: entity_field
+                source:
+                  derivable_context: 'field:taxonomy_term:tags:field_color_schema'
+                  'field:taxonomy_term:tags:field_color_schema':
+                    value:
+                      source_id: 'field_property:taxonomy_term:field_color_schema:value'
+              icon:
+                source_id: icon
+                source:
+                  value:
+                    icon_id: ''
+            slots:
+              label:
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:taxonomy_term:tags:field_icon'
+                      'field:taxonomy_term:tags:field_icon':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:taxonomy_term:tags:field_icon'
+                              source:
+                                type: icon_formatter
+                                settings:
+                                  dsfr:
+                                    size: xs
+                                    color: ''
+                                    alt: ''
+                                  icon_settings:
+                                    dsfr:
+                                      size: xs
+                                      color: ''
+                                      alt: ''
+                              _weight: '0'
+                      saved_values:
+                        size: xs
+                        color: ''
+                        alt: ''
+                    third_party_settings:
+                      styles:
+                        selected:
+                          spacing_margin_right: fr-mr-1v
+                    node_id: f87ae41c208447f3
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:taxonomy_term:tags:name'
+                      'field:taxonomy_term:tags:name':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:taxonomy_term:tags:name'
+                              source:
+                                type: string
+                                settings:
+                                  link_to_entity: false
+                    node_id: ce3523a28a966d9f
+            third_party_settings: ''
+            node_id: ''
+        node_id: 6c628254ae931f3f
+id: taxonomy_term.tags.tag_link
+targetEntityType: taxonomy_term
+bundle: tags
+mode: tag_link
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_icon:
+    type: icon_formatter
+    label: above
+    settings:
+      icon_settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_color_schema: true
+  langcode: true

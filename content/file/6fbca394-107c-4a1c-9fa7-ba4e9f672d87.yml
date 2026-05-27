@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 6fbca394-107c-4a1c-9fa7-ba4e9f672d87
+  default_langcode: fr
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: dsfr.png
+  uri:
+    -
+      value: 'public://images/dsfr.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 132366
+  status:
+    -
+      value: true

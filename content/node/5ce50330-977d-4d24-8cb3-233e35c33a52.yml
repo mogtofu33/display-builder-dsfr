@@ -1,0 +1,65 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 5ce50330-977d-4d24-8cb3-233e35c33a52
+  bundle: article
+  default_langcode: fr
+  depends:
+    82f28453-89a2-496d-bc54-edf30d2125b1: user
+    546a5159-a12d-403b-a903-101ef6aae6e4: file
+    b39e99e0-82eb-418b-8d2a-5932a0bb9b34: taxonomy_term
+    b06fda05-46e7-4b04-a030-82cc7807bbaf: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 82f28453-89a2-496d-bc54-edf30d2125b1
+  title:
+    -
+      value: 'Campagne nationale pour la sécurité routière'
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /article/campagne-nationale-pour-la-securite-routiere
+      langcode: fr
+  body:
+    -
+      value: '<p>Une campagne de sensibilisation à la sécurité routière est lancée afin de rappeler les bonnes pratiques de conduite et de prévenir les comportements à risque.</p><p>Cette initiative vise particulièrement les déplacements du quotidien et les trajets longue distance durant les périodes de forte circulation.</p><hr /><p><b>Prévention des accidents</b> : Les statistiques routières montrent l’importance de renforcer la sensibilisation au respect des règles de circulation. La campagne s’articule autour de plusieurs axes : réduction de la vitesse, lutte contre la fatigue au volant et prévention de l’alcool.</p><p>Des messages percutants et des visuels impactants sont diffusés sur tous les canaux médias pour toucher le maximum d’usagers de la route. Les actions se renforcent en période estivale et durant les jours fériés.</p><hr /><p><b>Sensibilisation des jeunes conducteurs</b> : Une attention particulière est accordée aux jeunes conducteurs qui représentent une part importante des accidents graves. Des interventions en lycées et dans les auto-écoles complètent la campagne générale.</p><p>Les conducteurs expérimentés sont aussi sollicités comme ambassadeurs de la sécurité routière. Des formations de sécurité défensive sont proposées pour perfectionner les comportements responsables.</p><p><b>Impact attendu</b> : L’objectif est une réduction significative du nombre d’accidents et de victimes sur les routes françaises. Le succès dépend de l’implication de tous les usagers et d’un renforcement des contrôles routiers.</p>'
+      format: full_html_dsfr
+      summary: ''
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1779892603
+      last_comment_name: ''
+      last_comment_uid: 2
+      comment_count: 0
+  field_image:
+    -
+      alt: 'Sécurité routière'
+      title: ''
+      width: 1253
+      height: 831
+      entity: 546a5159-a12d-403b-a903-101ef6aae6e4
+  field_pictogramme:
+    -
+      target_id: 'dsfr_picto:gendarmerie'
+  field_tags:
+    -
+      entity: b39e99e0-82eb-418b-8d2a-5932a0bb9b34
+    -
+      entity: b06fda05-46e7-4b04-a030-82cc7807bbaf

@@ -1,0 +1,39 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 49c8d299-3768-410c-8a55-5e3ebf15f9ae
+  bundle: page
+  default_langcode: fr
+  depends:
+    82f28453-89a2-496d-bc54-edf30d2125b1: user
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 82f28453-89a2-496d-bc54-edf30d2125b1
+  title:
+    -
+      value: ' Mentions légales'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /mentions-legales
+      langcode: fr
+  body:
+    -
+      value: '<p>Les missions et les informations légales du site.</p><h2 id="missions-du-site-infogouvfr">Missions du site</h2><ol type="1"><li data-list-item-id="e12669bce5e8f9bd6225ac2708ecac889">Détail mission [...]</li><li data-list-item-id="e06fc80f20f67743fbdaecdb265fab2f5">Détail mission [...]</li><li data-list-item-id="e72a5b38d85b7df587897f67d9200e57c">Détail mission [...]</li></ol><h3><strong>Éditeur</strong></h3><p>Le site est édité par [...]</p><h3><strong>Directeur de la publication</strong></h3><p>Directeur de publication [...]</p><h3><strong>Conception technique</strong></h3><p>Conception technique du site [...]</p><h3><strong>Gestion éditoriale</strong></h3><p>Suivi éditorial et graphique du site [...]</p><h3><strong>Hébergement</strong></h3><p>Le site est hébergé en France par [...]</p><h3><strong>Gestionnaire des statistiques</strong></h3><p>L’outil statistique est hébergé en France par [...]</p><h2>Crédits photographiques</h2><p>Les photos présentes sur ce site proviennent de sources différentes, mentionnées au cas par cas sur le crédit de chaque photo.</p><p>Par défaut, elles proviennent du pôle de [...].</p><h2 id="reutilisation-des-contenus-et-liens">Réutilisation des contenus et liens</h2><p>Sauf mention explicite de propriété intellectuelle détenue par des tiers, les contenus de ce site sont proposés sous licence ouverte Etalab 2.0.</p><p>Vous êtes notamment libres de les reproduire, copier, modifier, extraire, transformer, communiquer diffuser, redistribuer, publier, transmettre et exploiter sous réserve de mentionner leur source, leur date de dernière mise à jour et ne pas induire en erreur des tiers quant aux informations qui y figurent.</p><p>Tout site public ou privé est autorisé à établir, sans autorisation préalable, un lien (y compris profond) vers les informations diffusées sur ce site.</p><h2 id="liens-hypertextes">Liens hypertextes</h2><p>De nombreux liens vers d’autres sites, privés ou officiels, français ou étrangers, sont proposés. Leur présence ne saurait engager le Service [..] quant à leur contenu et ne vise qu’à permettre à l’internaute de trouver plus facilement d’autres ressources documentaires sur le sujet consulté.</p><h2 id="clause-de-responsabilite">Clause de responsabilité</h2><p>Les informations et/ou documents disponibles sur ce site sont susceptibles d’être modifiés à tout moment, et peuvent faire l’objet de mises à jour.</p><p>Le Service [..] ne pourra en aucun cas être tenu responsable de tout dommage de quelque nature qu’il soit résultant de l’interprétation ou de l’utilisation des informations et/ou documents disponibles sur ce site.</p><h2 id="accessibilite">Accessibilité</h2><p>Le site [..] est développé selon les recommandations du Référentiel général d’amélioration de l’accessibilité (RGAA), les normes W3C, et les composants du Système de design de l’État.</p><h2 id="signalement-dune-vulnerabilite">Signalement d’une vulnérabilité</h2><p>Vous avez découvert une fuite de données, une faille de sécurité, une vulnérabilité ou un incident de sécurité et vous souhaitez nous en informer ?</p><p>Vous pouvez contacter le CERT-FR qui se chargera de qualifier et transmettre votre signalement tout en préservant la confidentialité de votre identité et les éléments de votre déclaration.</p><h2>Contacter le CERT-FR</h2><p>Pour toute fuite de données, faille de sécurité, vulnérabilité ou un incident de sécurité.</p><p>Le CERT-FR n''est pas un service de justice ou de police recevant des plaintes.</p><ul><li data-list-item-id="eded90a9090e0dc8424a66e075868073f"><a href="https://cert.ssi.gouv.fr/contact/">Écrire au CERT-FR</a></li><li data-list-item-id="e9be4614740bf918294212fa486603dad"><a href="tel:3218">Appeler le CERT-FR</a></li><li data-list-item-id="ee96c579e943e7b0e80c9a2788f37bcbd"><a href="https://cert.ssi.gouv.fr/signalements/">En savoir plus sur le traitement des signalements par l’ANSSI</a></li></ul><h2 id="homologation-de-cybersecurite">Homologation de cybersécurité</h2><p>Le site « [..] » est homologué conformément aux prescriptions définies par le RGS (Référentiel Général de Sécurité, ordonnance 2005-1516 du 8 décembre 2005 et décret 2010-112 du 2 février 2010).</p><h2 id="nous-contacter">Nous contacter</h2><p>[...]</p>'
+      format: full_html_dsfr
+      summary: ''
