@@ -11,12 +11,12 @@
         }
     ],
     "require": {
-        "drupal/ui_suite_dsfr": "^1.14",
-        "drupal/ui_suite_dsfr_components": "dev-1.0.x",
-        "drupal/ui_suite_dsfr_utilities": "dev-1.0.x"
+        "drupal/ui_suite_dsfr": "*",
+        "drupal/ui_suite_dsfr_components": "*",
+        "drupal/ui_suite_dsfr_utilities": "*"
     },
     "require-dev": {
         "drupal/sdc_devel": "^1.0.2",
-        "drupal/display_builder_dev_tools": "@dev"
+        "drupal/display_builder_dev_tools": "*"
     }
 }
