@@ -40,27 +40,10 @@ composer require oomphinc/composer-installers-extender:^2
 composer require npm-asset/gouvfr--dsfr:^1.14
 ```
 
-_Temporaire_, utiliser les versions dev de certains modules :
+_Temporaire_, certains modules sont en version dev, il faut autoriser composer :
 
 ```shell
-composer require \
-  drupal/ui_patterns:dev-2.0.x \
-  drupal/ui_patterns_settings:dev-3.0.x \
-  drupal/display_builder:dev-1.0.x \
-  drupal/ui_suite_dsfr:dev-1.x \
-  drupal/ui_skins:^1.1@alpha \
-  drupal/ui_suite_dsfr_components:dev-1.0.x \
-  drupal/ui_suite_dsfr_utilities:dev-1.0.x \
-  drupal/easy_breadcrumb:^2.0.9 \
-  drupal/link_attributes:^2.1.2 \
-  drupal/smart_trim:^2.3.1 \
-  drupal/token:^1.17 \
-  drupal/pathauto:^1.15 \
-  drupal/redirect:^1.9 \
-  drupal/simple_sitemap:^4 \
-  drupal/sitemap:^2.0 \
-  drupal/ui_icons:^1.1.2 \
-  drush/drush
+composer config minimum-stability dev
 ```
 
 ### Drupal `recipe`
