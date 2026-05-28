@@ -64,7 +64,7 @@ Installer les `recipe` :
 ```shell
 composer config repo.display_builder_base vcs https://github.com/mogtofu33/display-builder-base.git
 composer config repo.display_builder_dsfr vcs https://github.com/mogtofu33/display-builder-dsfr.git
-composer require drupal/display_builder_base:dev-main drupal/display_builder_dsfr:dev-main
+composer require drupal/display_builder_base:1.0.x-dev drupal/display_builder_dsfr:1.0.x-dev
 ```
 
 ### Installation Drupal
