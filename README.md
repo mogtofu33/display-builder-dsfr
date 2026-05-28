@@ -20,38 +20,9 @@ Documentation Drupal sur les 'recipes' (en) :
 
 - Démarrer avec un site Druapl 11.3+
 
+```shell
 composer create-project drupal/recommended-project drupal_dsfr
 cd drupal_dsfr
-
-### Patches
-
-Le projet necéssite des patches pour fonctionner correctement.
-
-Voir la documentation de l'outil de patch [Composer patches](https://docs.cweagans.net/composer-patches/getting-started/installation/).
-
-Résumé d'installation des patches :
-
-```shell
-composer require cweagans/composer-patches
-composer config extra.enable-patching "true"
-composer config --merge --json extra.patchLevel '{"drupal/core": "-p2", "drupal/contrib_module": "-p1"}'
-composer config --merge --json extra.patches '{}'
-```
-
-Ajouter les patch à votre composer.json sous la section `extra > patches` :
-
-```json
-"patches": {
-    "drupal/ui_patterns": {
-        "https://www.drupal.org/i/3570294 throw error on missing component instead of fatal": "https://git.drupalcode.org/project/ui_patterns/-/merge_requests/478.patch"
-    },
-    "drupal/ui_suite_dsfr": {
-        "https://www.drupal.org/i/3590803 Add missing utilities from upstream": "https://git.drupalcode.org/project/ui_suite_dsfr/-/merge_requests/200.patch",
-        "https://www.drupal.org/i/3591278 Better stories and group": "https://git.drupalcode.org/project/ui_suite_dsfr/-/merge_requests/203.patch",
-        "https://www.drupal.org/i/3591352 Overrides for Display Builder": "https://git.drupalcode.org/project/ui_suite_dsfr/-/merge_requests/204.patch",
-        "https://www.drupal.org/i/3591712 Fix icons definition": "https://git.drupalcode.org/project/ui_suite_dsfr/-/merge_requests/205.patch"
-    }
-}
 ```
 
 ### DSFR avec Drupal
@@ -69,7 +40,7 @@ composer require oomphinc/composer-installers-extender:^2
 composer require npm-asset/gouvfr--dsfr:^1.14
 ```
 
-_Temporaire_, utiliser les versions dev :
+_Temporaire_, utiliser les versions dev de certains modules :
 
 ```shell
 composer require \
